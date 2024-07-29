@@ -48,9 +48,9 @@ const Header = () => {
         className={`${isMenuOpen ? "flex" : "hidden"
           } flex-col md:flex md:flex-row md:items-center w-full md:w-auto bg-zinc-900 md:bg-transparent`}
       >
-        <Link href="/dashboard/aboutbsch" className="py-2 px-4 block md:inline-block hover:bg-[#5E40E7] w-full">ABOUT BCSH</Link>
+        <Link href="/dashboard/aboutbsch" className="py-2 px-4 whitespace-nowrap block md:inline-block hover:bg-[#5E40E7] w-full">ABOUT BCSH</Link>
         <Link href="#" className="py-2 px-4 whitespace-nowrap block md:inline-block hover:bg-purple-700 disabled">HODLER PERKS</Link>
-        <Link href="/dashboard/roadmap" className="py-2 px-4 block md:inline-block hover:bg-[#5E40E7]">ROADMAP</Link>
+        <Link href="/dashboard/roadmap" className="py-2 px-4 block md:inline-block hover:bg-[#5E40E7] w-full">ROADMAP</Link>
         <Link href="#" className="py-2 px-4 block md:inline-block hover:bg-purple-700 disabled">AIRDROP</Link>
         <Link href="#" className="py-2 px-4 block md:inline-block hover:bg-purple-700 disabled">SOCIALS</Link>
         <button className="bg-black hover:bg-[#5E40E7] text-white-500 border border-[#5E40E7] py-2 px-4 rounded mr-2 mt-2 mb-2 lg:hidden">
