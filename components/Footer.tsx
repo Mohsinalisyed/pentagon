@@ -13,6 +13,7 @@ const Footer: React.FC = () => {
               width={1600}
               height={50}
               objectFit="contain"
+              className='w-full'
             />
           </div>
     </footer>

@@ -6,7 +6,7 @@ const AboutBSCH = () => {
   const { width } = useViewport()
   return (
     <div className="bg-black text-white p-8 relative">
-      <div className="absolute top-[-4rem] hidden lg:block left-1/2 transform -translate-x-1/2 z-40 pt-[680px]">
+      <div className="absolute top-[-4rem] hidden lg:block left-1/2 transform -translate-x-1/2 z-40 mt-[680px]">
         <img
           src="/about-logo.svg"
           alt="Center Image"
@@ -63,7 +63,7 @@ const AboutBSCH = () => {
               {`We're building a community where every member contributes to the narrative, helping heroes evolve and take on new adventures. By joining BCSH, you're not just collecting NFTs; you're helping to shape their stories and unlock their potential.`}
             </p>
             <p className="text-md text-[#969EB2] mb-5">
-              {`Whether you’re a fan of epic quests or enchanted by the lore of different blockchains, our heroes offer you a way to engage with blockchain technology in a fun and meaningful way. Every hero card is a piece of the action, a fragment of the saga that you help to unfold.`}
+              {`Whether you're a fan of epic quests or enchanted by the lore of different blockchains, our heroes offer you a way to engage with blockchain technology in a fun and meaningful way. Every hero card is a piece of the action, a fragment of the saga that you help to unfold.`}
             </p>
             <p className="text-md text-[#969EB2]">
               {`Step into our world, collect your heroes, and join us on a journey of discovery and engagement. Each superhero is waiting for their story to be told—with your help. Be part of a vibrant community that values creativity, involvement, and the thrill of the chase.`}
