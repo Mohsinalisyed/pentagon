@@ -1,17 +1,17 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
+
 export const useViewport = () => {
-    const [dimensions, setDimensions] = useState({
-        height: window.innerHeight,
-        width: window.innerWidth,
-    });
+    const [width, setWidth] = useState(0);
+
     useEffect(() => {
-        const handleWindowResize = () =>
-            setDimensions({
-                height: window.innerHeight,
-                width: window.innerWidth,
-            });
-        window.addEventListener("resize", handleWindowResize);
-        return () => window.removeEventListener("resize", handleWindowResize);
+        if (typeof window !== 'undefined') {
+            const handleResize = () => setWidth(window.innerWidth);
+            window.addEventListener('resize', handleResize);
+            handleResize();
+            return () => window.removeEventListener('resize', handleResize);
+        }
     }, []);
-    return { width: dimensions.width, height: dimensions.height };
+
+    return { width };
 };
+
