@@ -8,8 +8,16 @@ const config: Config = {
   ],
   theme: {
     fontFamily: {
-      display: ['Inter', 'system-ui', 'sans-serif'],
-      body: ['Inter', 'system-ui', 'sans-serif'],
+      display: ["Inter", "system-ui", "sans-serif"],
+      body: ["Inter", "system-ui", "sans-serif"],
+    },
+    colors: {
+      coreColor: "#FF9211",
+      coreHoverColor: "#FF8A00",
+      pentagonColor: "#5D41DF",
+      pentagonHoverColor: "#5740bd",
+      multiversColor: "#0BBCA3",
+      white:'#fff',
     },
     extend: {
       backgroundImage: {
@@ -18,8 +26,8 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       spacing: {
-        '273': '273px',
-        '118': '118px',
+        "273": "273px",
+        "118": "118px",
       },
     },
   },
