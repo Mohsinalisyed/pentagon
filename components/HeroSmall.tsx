@@ -4,21 +4,30 @@ import MintButton from "./MintButton";
 
 const HeroSmall = () => {
   return (
-    <div className="h-full w-full">
-      <img
-        src={LandingData.imgSrcSmallOne}
-        alt="Core Mint Image One"
-        className="w-full"
-      />
-      <div className="relative">
+    <>
+      <div className="h-full w-full">
         <img
-          src={LandingData.imgSrcSmallTwo}
-          alt="Core Mint Image Two"
+          src={LandingData.imgSrcSmallOne}
+          alt="Core Mint Image One"
           className="w-full"
         />
-        <MintButton />
+        <div className="relative">
+          <img
+            src={LandingData.imgSrcSmallTwo}
+            alt="Core Mint Image Two"
+            className="w-full"
+          />
+          <MintButton />
+        </div>
       </div>
-    </div>
+      <div className="bg-greyColor h-full py-12">
+        <img
+          src="/footerLogo.svg"
+          alt="Core Mint Image Three"
+          className="m-auto"
+        />
+      </div>
+    </>
   );
 };
 

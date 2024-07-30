@@ -10,19 +10,17 @@ const HomePage = () => {
   const { width } = useViewport();
 
   return (
-    <>
-      <div>
-        <Header />
-        {width > 768 ? (
-          <div className="w-ful flex items-center justify-center relative">
-            <img src={LandingData.imgSrcLarge} alt="Core Mint" />
-            <MintButton />
-          </div>
-        ) : (
-          <HeroSmall />
-        )}
-      </div>
-    </>
+    <div>
+      <Header />
+      {width > 768 ? (
+        <div className="w-ful flex items-center justify-center relative">
+          <img src={LandingData.imgSrcLarge} alt="Core Mint" />
+          <MintButton />
+        </div>
+      ) : (
+        <HeroSmall />
+      )}
+    </div>
   );
 };
 

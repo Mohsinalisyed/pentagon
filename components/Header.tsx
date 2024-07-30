@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useDisconnect, useReadContract } from "wagmi";
+import { useDisconnect, useReadContract, useBlockNumber } from "wagmi";
 import { useWalletConnect } from "@/app/utils/walletConnect";
 import { formatAddress } from "@/app/utils/utils";
 import { useState } from "react";
@@ -15,14 +15,15 @@ const Header = () => {
     data: balance,
     error,
     isLoading,
-    isSuccess,
-    refetch,
   } = useReadContract({
     abi: coreDistributorAbi,
     functionName: "balanceOf",
     address: "0x616A5BDb2Be3b01B73FD60FEad901BB040ee7dFA",
     chainId: 1115,
     args: [address!],
+    query: {
+      refetchInterval: 50000,
+    }
   });
 
   if (error) {
@@ -44,9 +45,7 @@ const Header = () => {
                 width={30}
                 height={30}
               />
-              <p className="text-white ml-2">
-                 {formatAddress(address || "")}
-              </p>
+              <p className="text-white ml-2">{formatAddress(address || "")}</p>
             </div>
           ) : (
             <button
@@ -69,11 +68,36 @@ const Header = () => {
           isMenuOpen ? "flex" : "hidden"
         } flex-col md:flex md:flex-row md:items-center w-full md:w-auto bg-zinc-900 md:bg-transparent`}
       >
-        <Link href="/dashboard/aboutbsch" className="py-2 px-4 block md:inline-block hover:bg-coreHoverColor hover:rounded w-full whitespace-nowrap">ABOUT BCSH</Link>
-        <Link href="#" className="py-2 px-4 whitespace-nowrap block md:inline-block hover:bg-purple-700 disabled ">HODLER PERKS</Link>
-        <Link href="/dashboard/roadmap" className="py-2 px-4 block md:inline-block hover:bg-coreHoverColor hover:rounded w-full">ROADMAP</Link>
-        <Link href="#" className="py-2 px-4 block md:inline-block hover:bg-purple-700 disabled">AIRDROP</Link>
-        <Link href="#" className="py-2 px-4 block md:inline-block hover:bg-purple-700 disabled">SOCIALS</Link>
+        <Link
+          href="/dashboard/aboutbsch"
+          className="py-2 px-4 block md:inline-block hover:bg-coreHoverColor hover:rounded w-full whitespace-nowrap"
+        >
+          ABOUT BCSH
+        </Link>
+        <Link
+          href="#"
+          className="py-2 px-4 whitespace-nowrap block md:inline-block hover:bg-purple-700 disabled "
+        >
+          HODLER PERKS
+        </Link>
+        <Link
+          href="/dashboard/roadmap"
+          className="py-2 px-4 block md:inline-block hover:bg-coreHoverColor hover:rounded w-full"
+        >
+          ROADMAP
+        </Link>
+        <Link
+          href="#"
+          className="py-2 px-4 block md:inline-block hover:bg-purple-700 disabled"
+        >
+          AIRDROP
+        </Link>
+        <Link
+          href="#"
+          className="py-2 px-4 block md:inline-block hover:bg-purple-700 disabled"
+        >
+          SOCIALS
+        </Link>
       </nav>
       <div className="hidden md:flex items-center space-x-4">
         {hydrated && isConnected ? (

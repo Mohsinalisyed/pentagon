@@ -5,9 +5,9 @@ export let LandingData = {
   chainExplorer: "",
   chainIcon: "/",
   chainContractAddress: "0x",
-  imgSrcSmallOne: "/assets/core/coreHero1.svg",
-  imgSrcSmallTwo: "/assets/core/coreHero2.svg",
-  imgSrcLarge: "/assets/core/MintPageForCore.svg",
+  imgSrcSmallOne: "/assets/core/coreHero1.png",
+  imgSrcSmallTwo: "/assets/core/coreHero2.png",
+  imgSrcLarge: "/assets/core/MintPageForCore.png",
   addClass: "bg-coreColor hover:bg-coreHoverColor",
 };
 
@@ -20,9 +20,9 @@ switch (process.env.NEXT_APP_CHAIN_ID) {
       chainExplorer: "",
       chainIcon: "/",
       chainContractAddress: "0x",
-      imgSrcSmallOne: "/assets/core/coreHero1.svg",
-      imgSrcSmallTwo: "/assets/core/coreHero2.svg",
-      imgSrcLarge: "/assets/core/MintPageForCore.svg",
+      imgSrcSmallOne: "/assets/core/coreHero1.png",
+      imgSrcSmallTwo: "/assets/core/coreHero2.png",
+      imgSrcLarge: "/assets/core/MintPageForCore.png",
       addClass: "bg-coreColor hover:bg-coreHoverColor",
     };
     break;
