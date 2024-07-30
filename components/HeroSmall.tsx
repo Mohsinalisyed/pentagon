@@ -4,15 +4,18 @@ import MintButton from "./MintButton";
 
 const HeroSmall = () => {
   return (
-    <div>
-      <div
-        style={{ backgroundImage: `url('${LandingData.imgSrcSmallOne}')` }}
-        className="bg-contain xl:bg-cover bg-center bg-no-repeat w-ful h-screen flex items-center justify-center relative"
-      ></div>
-      <div
-        style={{ backgroundImage: `url('${LandingData.imgSrcSmallTwo}')` }}
-        className="bg-contain xl:bg-cover bg-center bg-no-repeat w-ful h-screen flex items-center justify-center relative"
-      >
+    <div className="h-full w-full">
+      <img
+        src={LandingData.imgSrcSmallOne}
+        alt="Core Mint Image One"
+        className="w-full"
+      />
+      <div className="relative">
+        <img
+          src={LandingData.imgSrcSmallTwo}
+          alt="Core Mint Image Two"
+          className="w-full"
+        />
         <MintButton />
       </div>
     </div>

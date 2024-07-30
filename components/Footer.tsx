@@ -14,6 +14,8 @@ const Footer: React.FC = () => {
               height={50}
               objectFit="contain"
               className='w-full'
+              loader={({ src }) => `${src}?w=1600&h=50`}
+
             />
           </div>
     </footer>
