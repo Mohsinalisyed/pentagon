@@ -1,11 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client"
 import { useViewport } from "@/hooks/useViewPort";
-import AboutLeft from "@/Svg/AboutLeft";
 import AboutLogo from "@/Svg/AboutLogo";
-import AboutRight from "@/Svg/AboutRight";
-import ResAboutLeft from "@/Svg/ResAboutLeft";
-import ResAboutRight from "@/Svg/ResAboutRight";
 import React from "react";
 
 const AboutBSCH = () => {
@@ -13,7 +9,7 @@ const AboutBSCH = () => {
   return (
     <div className="bg-black text-white p-8 relative max-w-6xl mx-auto px-4 py-10">
       <h1 className="text-center text-4xl font-bold text-[#EFC235] mb-16">ABOUT US</h1>
-      <div className="absolute mt-[30%] ml-[39%] hidden xl:block">
+      <div className="absolute mt-[26%] ml-[44%] hidden xl:block">
         <AboutLogo />
       </div>
       <div className="flex flex-col lg:flex-row">
@@ -43,7 +39,7 @@ const AboutBSCH = () => {
             {/* <AboutLeft /> */}
             <object
               data="https://www.google.com/imgres?q=skeleton%20image%20react%20loading&imgurl=https%3A%2F%2Fcdn.prod.website-files.com%2F610bb663a35dd3364ddbf08c%2F63219b2e6e6a367eb5621951_react-skeleton-header-min.png&imgrefurl=https%3A%2F%2Fbirdeatsbug.com%2Fblog%2Fimplementing-skeleton-screen-in-react-with-react-loading-skeleton-and-suspense&docid=mIUEBa9IIqQQbM&tbnid=Hw0QGeNRnPFxtM&vet=12ahUKEwjK0Jrnq86HAxWuBdsEHVlVN1AQM3oECGkQAA..i&w=3600&h=2341&hcb=2&ved=2ahUKEwjK0Jrnq86HAxWuBdsEHVlVN1AQM3oECGkQAA"
-              type="image/svg+xml" width={width < 1280 ? '500' : "600"} height="500" >
+              type="image/svg+xml" width={width < 1280 ? '500' : "600"} height="600" >
               <img src="/aboutimage2.png" alt="aboutimage"/>
             </object>
           </div>
@@ -59,12 +55,13 @@ const AboutBSCH = () => {
         <div className="flex flex-col mt-[0px] xl:mt-[-90px]">
           <div className="hidden lg:block">
             {/* <AboutRight /> */}
-            <object data="https://www.google.com/imgres?q=skeleton%20image%20react%20loading&imgurl=https%3A%2F%2Fcdn.prod.website-files.com%2F610bb663a35dd3364ddbf08c%2F63219b2e6e6a367eb5621951_react-skeleton-header-min.png&imgrefurl=https%3A%2F%2Fbirdeatsbug.com%2Fblog%2Fimplementing-skeleton-screen-in-react-with-react-loading-skeleton-and-suspense&docid=mIUEBa9IIqQQbM&tbnid=Hw0QGeNRnPFxtM&vet=12ahUKEwjK0Jrnq86HAxWuBdsEHVlVN1AQM3oECGkQAA..i&w=3600&h=2341&hcb=2&ved=2ahUKEwjK0Jrnq86HAxWuBdsEHVlVN1AQM3oECGkQAAhttps://img.freepik.com/free-photo/free-photo-black-grunge-abstract-background-pattern-wallpaper_1340-33834.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1722297600&semt=ais_hybrid" type="image/svg+xml" width={width < 1280 ? '500' : "600"} height={width < 1280 ? '500' : "692"} >
-              <img src="/aboutimage.png" alt="aboutimage" />
+            <object data="https://www.google.com/imgres?q=skeleton%20image%20react%20loading&imgurl=https%3A%2F%2Fcdn.prod.website-files.com%2F610bb663a35dd3364ddbf08c%2F63219b2e6e6a367eb5621951_react-skeleton-header-min.png&imgrefurl=https%3A%2F%2Fbirdeatsbug.com%2Fblog%2Fimplementing-skeleton-screen-in-react-with-react-loading-skeleton-and-suspense&docid=mIUEBa9IIqQQbM&tbnid=Hw0QGeNRnPFxtM&vet=12ahUKEwjK0Jrnq86HAxWuBdsEHVlVN1AQM3oECGkQAA..i&w=3600&h=2341&hcb=2&ved=2ahUKEwjK0Jrnq86HAxWuBdsEHVlVN1AQM3oECGkQAAhttps://img.freepik.com/free-photo/free-photo-black-grunge-abstract-background-pattern-wallpaper_1340-33834.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1722297600&semt=ais_hybrid"
+              type="image/svg+xml" width={width < 1280 ? '500' : "520"} height={width < 1280 ? '500' : "692"} >
+              <img src="/aboutright1.png" alt="aboutimage" />
             </object>
 
           </div>
-          <div className="mt-[50px] xl:mt-[-110px] lg:pl-16 text-center lg:text-left">
+          <div className="mt-[-20px] xl:mt-[-190px] lg:pl-24 text-center lg:text-left">
             <h1 className="text-2xl mb-4 text-white">
               {`But BCSH is about more than just collecting—it's about participating.
                 See all Game.`}
