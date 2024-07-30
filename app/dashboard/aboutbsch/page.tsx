@@ -61,7 +61,7 @@ const AboutBSCH = () => {
             </object>
 
           </div>
-          <div className="mt-[-20px] xl:mt-[-190px] lg:pl-24 text-center lg:text-left">
+          <div className="mt-[0px] xl:mt-[-190px] lg:pl-24 text-center lg:text-left">
             <h1 className="text-2xl mb-4 text-white">
               {`But BCSH is about more than just collecting—it's about participating.
                 See all Game.`}
