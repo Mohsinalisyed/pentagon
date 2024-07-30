@@ -38,4 +38,5 @@ export const config = createConfig({
   transports: {
     [coreTestNet.id]: http('https://rpc.test.btcs.network/'),
   },
+  ssr: true
 });

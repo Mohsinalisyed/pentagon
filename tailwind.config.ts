@@ -17,7 +17,11 @@ const config: Config = {
       pentagonColor: "#5D41DF",
       pentagonHoverColor: "#5740bd",
       multiversColor: "#0BBCA3",
-      white:'#fff',
+      white: '#fff',
+      greyColor: "#232323",
+      borderColor: '#494747',
+      yellowLight: "#F6D92B"
+
     },
     extend: {
       backgroundImage: {
