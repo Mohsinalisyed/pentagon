@@ -35,33 +35,18 @@ const AboutBSCH = () => {
             </p>
 
           </div>
-          <div className="mt-[30px] hidden lg:block">
-            {/* <AboutLeft /> */}
-            <object
-              data="https://www.google.com/imgres?q=skeleton%20image%20react%20loading&imgurl=https%3A%2F%2Fcdn.prod.website-files.com%2F610bb663a35dd3364ddbf08c%2F63219b2e6e6a367eb5621951_react-skeleton-header-min.png&imgrefurl=https%3A%2F%2Fbirdeatsbug.com%2Fblog%2Fimplementing-skeleton-screen-in-react-with-react-loading-skeleton-and-suspense&docid=mIUEBa9IIqQQbM&tbnid=Hw0QGeNRnPFxtM&vet=12ahUKEwjK0Jrnq86HAxWuBdsEHVlVN1AQM3oECGkQAA..i&w=3600&h=2341&hcb=2&ved=2ahUKEwjK0Jrnq86HAxWuBdsEHVlVN1AQM3oECGkQAA"
-              type="image/svg+xml" width={width < 1280 ? '500' : "600"} height="600" >
+          <div className="mt-[30px] ml-[-5px] hidden lg:block">
               <img src="/aboutimage2.png" alt="aboutimage"/>
-            </object>
           </div>
           <div className="mt-[30px] flex justify-center lg:hidden">
-            {/* <ResAboutRight /> */}
-            <object
-              data="https://www.google.com/imgres?q=skeleton%20image%20react%20loading&imgurl=https%3A%2F%2Fcdn.prod.website-files.com%2F610bb663a35dd3364ddbf08c%2F63219b2e6e6a367eb5621951_react-skeleton-header-min.png&imgrefurl=https%3A%2F%2Fbirdeatsbug.com%2Fblog%2Fimplementing-skeleton-screen-in-react-with-react-loading-skeleton-and-suspense&docid=mIUEBa9IIqQQbM&tbnid=Hw0QGeNRnPFxtM&vet=12ahUKEwjK0Jrnq86HAxWuBdsEHVlVN1AQM3oECGkQAA..i&w=3600&h=2341&hcb=2&ved=2ahUKEwjK0Jrnq86HAxWuBdsEHVlVN1AQM3oECGkQAA"
-              type="image/svg+xml" width="325" height="552">
               <img src="/resabout1.png" alt="aboutimage" />
-            </object>
           </div>
         </div>
         <div className="flex flex-col mt-[0px] xl:mt-[-90px]">
           <div className="hidden lg:block">
-            {/* <AboutRight /> */}
-            <object data="https://www.google.com/imgres?q=skeleton%20image%20react%20loading&imgurl=https%3A%2F%2Fcdn.prod.website-files.com%2F610bb663a35dd3364ddbf08c%2F63219b2e6e6a367eb5621951_react-skeleton-header-min.png&imgrefurl=https%3A%2F%2Fbirdeatsbug.com%2Fblog%2Fimplementing-skeleton-screen-in-react-with-react-loading-skeleton-and-suspense&docid=mIUEBa9IIqQQbM&tbnid=Hw0QGeNRnPFxtM&vet=12ahUKEwjK0Jrnq86HAxWuBdsEHVlVN1AQM3oECGkQAA..i&w=3600&h=2341&hcb=2&ved=2ahUKEwjK0Jrnq86HAxWuBdsEHVlVN1AQM3oECGkQAAhttps://img.freepik.com/free-photo/free-photo-black-grunge-abstract-background-pattern-wallpaper_1340-33834.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1722297600&semt=ais_hybrid"
-              type="image/svg+xml" width={width < 1280 ? '500' : "520"} height={width < 1280 ? '500' : "692"} >
               <img src="/aboutright1.png" alt="aboutimage" />
-            </object>
-
           </div>
-          <div className="mt-[0px] xl:mt-[-190px] lg:pl-24 text-center lg:text-left">
+          <div className="lg:pl-24 text-center lg:text-left">
             <h1 className="text-2xl mb-4 text-white">
               {`But BCSH is about more than just collecting—it's about participating.
                 See all Game.`}
@@ -77,13 +62,8 @@ const AboutBSCH = () => {
             </p>
 
           </div>
-          <div className="mt-[30px] flex justify-center lg:hidden" >
-            {/* <ResAboutLeft /> */}
-            <object
-              data="https://www.google.com/imgres?q=skeleton%20image%20react%20loading&imgurl=https%3A%2F%2Fcdn.prod.website-files.com%2F610bb663a35dd3364ddbf08c%2F63219b2e6e6a367eb5621951_react-skeleton-header-min.png&imgrefurl=https%3A%2F%2Fbirdeatsbug.com%2Fblog%2Fimplementing-skeleton-screen-in-react-with-react-loading-skeleton-and-suspense&docid=mIUEBa9IIqQQbM&tbnid=Hw0QGeNRnPFxtM&vet=12ahUKEwjK0Jrnq86HAxWuBdsEHVlVN1AQM3oECGkQAA..i&w=3600&h=2341&hcb=2&ved=2ahUKEwjK0Jrnq86HAxWuBdsEHVlVN1AQM3oECGkQAA"
-              type="image/svg+xml" width="333" height="600">
-              <img src="/resabout2.png" alt="aboutimage" />
-            </object>
+          <div className="mt-[30px] flex justify-center lg:hidden" >  
+              <img src="/resabout2.png" alt="aboutimage" />    
           </div>
         </div>
      </div>
