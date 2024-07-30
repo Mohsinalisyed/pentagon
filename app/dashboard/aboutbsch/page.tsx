@@ -81,7 +81,7 @@ const AboutBSCH = () => {
             {/* <ResAboutLeft /> */}
             <object
               data="https://www.google.com/imgres?q=skeleton%20image%20react%20loading&imgurl=https%3A%2F%2Fcdn.prod.website-files.com%2F610bb663a35dd3364ddbf08c%2F63219b2e6e6a367eb5621951_react-skeleton-header-min.png&imgrefurl=https%3A%2F%2Fbirdeatsbug.com%2Fblog%2Fimplementing-skeleton-screen-in-react-with-react-loading-skeleton-and-suspense&docid=mIUEBa9IIqQQbM&tbnid=Hw0QGeNRnPFxtM&vet=12ahUKEwjK0Jrnq86HAxWuBdsEHVlVN1AQM3oECGkQAA..i&w=3600&h=2341&hcb=2&ved=2ahUKEwjK0Jrnq86HAxWuBdsEHVlVN1AQM3oECGkQAA"
-              type="image/svg+xml" width="333" height="445">
+              type="image/svg+xml" width="333" height="600">
               <img src="/resabout2.png" alt="aboutimage" />
             </object>
           </div>
