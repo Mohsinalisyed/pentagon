@@ -43,7 +43,7 @@ const AboutBSCH = () => {
             {/* <AboutLeft /> */}
             <object
               data="https://www.google.com/imgres?q=skeleton%20image%20react%20loading&imgurl=https%3A%2F%2Fcdn.prod.website-files.com%2F610bb663a35dd3364ddbf08c%2F63219b2e6e6a367eb5621951_react-skeleton-header-min.png&imgrefurl=https%3A%2F%2Fbirdeatsbug.com%2Fblog%2Fimplementing-skeleton-screen-in-react-with-react-loading-skeleton-and-suspense&docid=mIUEBa9IIqQQbM&tbnid=Hw0QGeNRnPFxtM&vet=12ahUKEwjK0Jrnq86HAxWuBdsEHVlVN1AQM3oECGkQAA..i&w=3600&h=2341&hcb=2&ved=2ahUKEwjK0Jrnq86HAxWuBdsEHVlVN1AQM3oECGkQAA"
-              type="image/svg+xml" width={width < 1280 ? '500' : "600"} height="500" style={{ marginLeft: '-50px' }} >
+              type="image/svg+xml" width={width < 1280 ? '500' : "600"} height="500" >
               <img src="/aboutimage2.png" alt="aboutimage"/>
             </object>
           </div>
@@ -64,7 +64,7 @@ const AboutBSCH = () => {
             </object>
 
           </div>
-          <div className="mt-[100px] xl:mt-[-90px] lg:pl-16 text-center lg:text-left">
+          <div className="mt-[50px] xl:mt-[-110px] lg:pl-16 text-center lg:text-left">
             <h1 className="text-2xl mb-4 text-white">
               {`But BCSH is about more than just collecting—it's about participating.
                 See all Game.`}
