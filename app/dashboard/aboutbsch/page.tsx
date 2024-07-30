@@ -44,7 +44,7 @@ const AboutBSCH = () => {
             <object
               data="https://www.google.com/imgres?q=skeleton%20image%20react%20loading&imgurl=https%3A%2F%2Fcdn.prod.website-files.com%2F610bb663a35dd3364ddbf08c%2F63219b2e6e6a367eb5621951_react-skeleton-header-min.png&imgrefurl=https%3A%2F%2Fbirdeatsbug.com%2Fblog%2Fimplementing-skeleton-screen-in-react-with-react-loading-skeleton-and-suspense&docid=mIUEBa9IIqQQbM&tbnid=Hw0QGeNRnPFxtM&vet=12ahUKEwjK0Jrnq86HAxWuBdsEHVlVN1AQM3oECGkQAA..i&w=3600&h=2341&hcb=2&ved=2ahUKEwjK0Jrnq86HAxWuBdsEHVlVN1AQM3oECGkQAA"
               type="image/svg+xml" width={width < 1280 ? '500' : "600"} height="500" style={{ marginLeft: '-50px' }} >
-              <img src="/about-left.svg" alt="aboutimage"/>
+              <img src="/aboutimage2.png" alt="aboutimage" />
             </object>
           </div>
           <div className="mt-[30px] flex justify-center lg:hidden">
@@ -52,7 +52,7 @@ const AboutBSCH = () => {
             <object
               data="https://www.google.com/imgres?q=skeleton%20image%20react%20loading&imgurl=https%3A%2F%2Fcdn.prod.website-files.com%2F610bb663a35dd3364ddbf08c%2F63219b2e6e6a367eb5621951_react-skeleton-header-min.png&imgrefurl=https%3A%2F%2Fbirdeatsbug.com%2Fblog%2Fimplementing-skeleton-screen-in-react-with-react-loading-skeleton-and-suspense&docid=mIUEBa9IIqQQbM&tbnid=Hw0QGeNRnPFxtM&vet=12ahUKEwjK0Jrnq86HAxWuBdsEHVlVN1AQM3oECGkQAA..i&w=3600&h=2341&hcb=2&ved=2ahUKEwjK0Jrnq86HAxWuBdsEHVlVN1AQM3oECGkQAA"
               type="image/svg+xml" width="325" height="552">
-              <img src="/aboutImage1.svg" alt="aboutimage" />
+              <img src="/resabout1.png" alt="aboutimage" />
             </object>
           </div>
         </div>
@@ -60,7 +60,7 @@ const AboutBSCH = () => {
           <div className="hidden lg:block">
             {/* <AboutRight /> */}
             <object data="https://www.google.com/imgres?q=skeleton%20image%20react%20loading&imgurl=https%3A%2F%2Fcdn.prod.website-files.com%2F610bb663a35dd3364ddbf08c%2F63219b2e6e6a367eb5621951_react-skeleton-header-min.png&imgrefurl=https%3A%2F%2Fbirdeatsbug.com%2Fblog%2Fimplementing-skeleton-screen-in-react-with-react-loading-skeleton-and-suspense&docid=mIUEBa9IIqQQbM&tbnid=Hw0QGeNRnPFxtM&vet=12ahUKEwjK0Jrnq86HAxWuBdsEHVlVN1AQM3oECGkQAA..i&w=3600&h=2341&hcb=2&ved=2ahUKEwjK0Jrnq86HAxWuBdsEHVlVN1AQM3oECGkQAAhttps://img.freepik.com/free-photo/free-photo-black-grunge-abstract-background-pattern-wallpaper_1340-33834.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1722297600&semt=ais_hybrid" type="image/svg+xml" width={width < 1280 ? '500' : "600"} height={width < 1280 ? '500' : "692"} >
-              <img src="/about-right.svg" alt="aboutimage" />
+              <img src="/aboutimage.png" alt="aboutimage" />
             </object>
 
           </div>
@@ -85,11 +85,11 @@ const AboutBSCH = () => {
             <object
               data="https://www.google.com/imgres?q=skeleton%20image%20react%20loading&imgurl=https%3A%2F%2Fcdn.prod.website-files.com%2F610bb663a35dd3364ddbf08c%2F63219b2e6e6a367eb5621951_react-skeleton-header-min.png&imgrefurl=https%3A%2F%2Fbirdeatsbug.com%2Fblog%2Fimplementing-skeleton-screen-in-react-with-react-loading-skeleton-and-suspense&docid=mIUEBa9IIqQQbM&tbnid=Hw0QGeNRnPFxtM&vet=12ahUKEwjK0Jrnq86HAxWuBdsEHVlVN1AQM3oECGkQAA..i&w=3600&h=2341&hcb=2&ved=2ahUKEwjK0Jrnq86HAxWuBdsEHVlVN1AQM3oECGkQAA"
               type="image/svg+xml" width="333" height="445">
-              <img src="/aboutImage2.svg" alt="aboutimage" />
+              <img src="/resabout2.png" alt="aboutimage" />
             </object>
           </div>
         </div>
-     </div>
+      </div>
     </div>
   );
 };
