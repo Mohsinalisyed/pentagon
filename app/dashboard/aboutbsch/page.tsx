@@ -15,7 +15,7 @@ const AboutBSCH = () => {
       <div className="flex flex-col lg:flex-row">
         <div className="flex flex-col">
           <div className="text-center lg:text-left lg:pr-16 ">
-            <h2 className="text-2xl mb-4">
+            <h2 className="text-2xl mb-4 uppercase">
               Welcome to a captivating universe where every blockchain superhero
               NFT is more than just a digital collectible.
             </h2>
@@ -25,7 +25,7 @@ const AboutBSCH = () => {
               own native blockchain, reflecting the distinct spirit and
               innovative flair of each platform.`}
             </p>
-            <p className="text-md text-[#969EB2]" >
+            <p className="text-md text-[#969EB2] pr-5" >
               {`At BCSH, every NFT is a gateway to a story, where superheroes
               aren't just born—they're discovered and cherished. With our heroes
               officially trademarked in the United States Patent and Trademark
@@ -47,9 +47,8 @@ const AboutBSCH = () => {
             <img src="/aboutright1.png" alt="aboutimage" />
           </div>
           <div className="lg:pl-24 text-center lg:text-left">
-            <h1 className="text-2xl mb-4 text-white">
-              {`But BCSH is about more than just collecting—it's about participating.
-                See all Game.`}
+            <h1 className="text-2xl mb-4 text-white uppercase">
+              {`But BCSH is about more than just collecting—it's about participating.`}
             </h1>
             <p className="text-md text-[#969EB2] mb-3">
               {`We're building a community where every member contributes to the narrative, helping heroes evolve and take on new adventures. By joining BCSH, you're not just collecting NFTs; you're helping to shape their stories and unlock their potential.`}
