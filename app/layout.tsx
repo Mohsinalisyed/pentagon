@@ -6,7 +6,7 @@ import "./globals.css";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { WagmiProvider } from "wagmi";
 import { config } from "./config/config";
-
+import Header from "../components/Header";
 const queryClient = new QueryClient();
 
 const inter = Inter({ subsets: ["latin"] });
@@ -24,6 +24,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <WagmiProvider config={config}>
           <QueryClientProvider client={queryClient}>
+            <Header />
             {children}
           </QueryClientProvider>
         </WagmiProvider>

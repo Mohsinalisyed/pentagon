@@ -79,7 +79,7 @@ const HeaderComponent = () => {
           } flex-col lg:flex lg:flex-row lg:items-center w-full lg:w-auto bg-zinc-900 lg:bg-transparent`}
       >
         <Link
-          href="/dashboard/aboutbsch"
+          href="/aboutbsch"
           onClick={() => handleLinkClick("ABOUT BCSH")}
           className={`py-2 px-4 block lg:inline-block hover:bg-coreHoverColor hover:rounded w-full whitespace-nowrap border-b-2 border-borderColor lg:border-b-0 ${selectedLink === "ABOUT BCSH" ? "border-l-4 border-indigo-500 lg:border-l-0" : ""
             } text-sm lg:text-base xl:text-lg`}
@@ -95,7 +95,7 @@ const HeaderComponent = () => {
           HODLER PERKS
         </Link>
         <Link
-          href="/dashboard/roadmap"
+          href="/roadmap"
           onClick={() => handleLinkClick("ROADMAP")}
           className={`py-2 px-4 block lg:inline-block hover:bg-coreHoverColor hover:rounded w-full border-b-2 border-borderColor lg:border-b-0 ${selectedLink === "ROADMAP" ? "border-l-4 border-indigo-500 lg:border-l-0" : ""
             } text-sm lg:text-base xl:text-lg`}
