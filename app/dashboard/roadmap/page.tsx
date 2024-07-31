@@ -2,17 +2,11 @@
 import React from "react";
 import Image from "next/image";
 import RoadmapComp from "@/components/RoadmapComp";
-import { useViewport } from "@/hooks/useViewPort";
-import RoadmapWebComponentnt from "@/components/RoadmapWebComp";
+import RoadmapWebComp from "@/components/RoadmapWebComp";
 
 const RoadMap = () => {
-  const { width } = useViewport()
-
   return (
-
-    
     <>
-     
       <div className="min-h-screen flex flex-col items-center py-10 bg-black">
         <h1 className="text-center text-4xl font-bold text-[#EFC235] mb-4 lg:mb-20">ROADMAP</h1>
         <div className="p-5 bg-black flex flex-col items-center lg:hidden">
@@ -72,7 +66,7 @@ const RoadMap = () => {
 
         </div>
         <div className="w-full max-w-5xl shadow-lg rounded-lg overflow-hidden hidden lg:block">
-          <RoadmapWebComponentnt />
+          <RoadmapWebComp />
         </div>
       </div>
     </>

@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-const RoadmapWebComponent = () => {
+const RoadmapWebComp = () => {
     return (
         <div className='m-max-6xl'>
             <div
@@ -13,7 +13,7 @@ const RoadmapWebComponent = () => {
                     width: "100%",
                     height: "1520px",
                     position: "relative",
-                    zIndex:'1'
+                    zIndex: '1'
                 }}
             >
                 <div className='flex justify-end'>
@@ -39,7 +39,7 @@ const RoadmapWebComponent = () => {
                         width={340}
                         height={340}
                     />
-             </div>
+                </div>
                 <div>
                     <div className="rounded-lg absolute right-[70px] top-[300px] shadow-lg flex flex-col p-2" style={{ alignItems: 'center', border: '1px solid #EFC23566', maxWidth: "410px" }}>
                         <Image
@@ -63,7 +63,7 @@ const RoadmapWebComponent = () => {
                         width={340}
                         height={300}
                     />
-              </div>
+                </div>
                 <div className='flex justify-end'>
                     <div className="rounded-lg absolute left-[50px] top-[620px] shadow-lg flex flex-col p-2" style={{ alignItems: 'center', border: '1px solid #EFC23566', maxWidth: "410px" }}>
                         <Image
@@ -111,7 +111,7 @@ const RoadmapWebComponent = () => {
                         width={300}
                         height={300}
                     />
-             </div>
+                </div>
                 <div className='flex justify-end'>
                     <div className="rounded-lg absolute left-[50px] top-[1275px] shadow-lg flex flex-col p-2" style={{ alignItems: 'center', border: '1px solid #EFC23566', maxWidth: "410px" }}>
                         <Image
@@ -134,10 +134,10 @@ const RoadmapWebComponent = () => {
                         width={260}
                         height={260}
                     />
-               </div>
+                </div>
             </div>
         </div>
     );
 };
 
-export default RoadmapWebComponent;
+export default RoadmapWebComp;
