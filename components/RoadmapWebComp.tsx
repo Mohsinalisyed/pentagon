@@ -41,7 +41,7 @@ const RoadmapWebComp = () => {
                     />
                 </div>
                 <div>
-                    <div className="rounded-lg absolute right-[70px] top-[295px] shadow-lg flex flex-col p-2" style={{ alignItems: 'center', border: '1px solid #EFC23566', maxWidth: "410px" }}>
+                    <div className="rounded-lg absolute right-[50px] top-[295px] shadow-lg flex flex-col p-2" style={{ alignItems: 'center', border: '1px solid #EFC23566', maxWidth: "430px" }}>
                         <Image
                             src="/card2image.svg"
                             alt="Center Image"
@@ -89,7 +89,7 @@ const RoadmapWebComp = () => {
                     />
                 </div>
                 <div>
-                    <div className="rounded-lg absolute right-[70px] top-[955px] shadow-lg flex flex-col p-2" style={{ alignItems: 'center', border: '1px solid #EFC23566', maxWidth: "410px" }}>
+                    <div className="rounded-lg absolute right-[50px] top-[955px] shadow-lg flex flex-col p-2" style={{ alignItems: 'center', border: '1px solid #EFC23566', maxWidth: "430px" }}>
                         <Image
                             src="/card4image.svg"
                             alt="Center Image"
