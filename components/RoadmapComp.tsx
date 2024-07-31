@@ -15,12 +15,12 @@ const RoadmapComp: React.FC<Iprops> = ({ heading, imgSrc, desc, heading2 }) => {
               className="w-32"
               style={{ borderRadius: "160px", border: "20px solid black" }}
           />
-          <h1 className="text-3xl mb-4 text-white text-center">
+          <h1 className="text-3xl mb-4 text-white text-center font-chakra">
               {heading}
               <br />
               {heading2}
           </h1>
-          <p className="text-lg text-[#969EB2] mb-5 text-center">
+          <p className="text-lg text-[#969EB2] mb-5 text-center font-sans">
             {desc}
           </p>
       </div>

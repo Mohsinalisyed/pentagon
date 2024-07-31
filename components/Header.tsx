@@ -5,7 +5,6 @@ import Image from "next/image";
 import { useDisconnect, useReadContract } from "wagmi";
 import { useWalletConnect } from "@/app/utils/walletConnect";
 import { formatAddress } from "@/app/utils/utils";
-import { useEffect } from "react";
 import { useState } from "react";
 import Menu from "../public/menu.svg";
 import { coreDistributorAbi } from "@/abi/core/coreDistributorAbi";
@@ -40,7 +39,7 @@ const HeaderComponent = () => {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row justify-between items-center px-0  xl:px-6 bg-zinc-900 text-white">
+    <div className="flex flex-col lg:flex-row justify-between items-center px-0  xl:px-6 bg-zinc-900 text-white font-archivo">
       <div className="flex justify-between items-center w-full lg:w-auto px-4 lg:px:0">
         <Link href="/">
           <Image src="/logo.svg" alt="logo" width={130} height={50} />

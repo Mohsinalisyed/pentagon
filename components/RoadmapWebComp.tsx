@@ -25,10 +25,10 @@ const RoadmapWebComp = () => {
                             width={100}
                             height={100}
                         />
-                        <h1 className="text-2xl mb-3 text-white text-center">
+                        <h1 className="text-2xl mb-3 text-white text-center font-chakra">
                             100% Art reveal
                         </h1>
-                        <p className="text-sm text-[#969EB2] mb-3 text-center">
+                        <p className="text-sm text-[#969EB2] mb-3 text-center font-sans">
                             Hold tight! The true identity of your hero will be unveiled only after all units are claimed. Get ready for the ultimate reveal that will ignite the collector in you!
                         </p>
                     </div>
@@ -41,7 +41,7 @@ const RoadmapWebComp = () => {
                     />
                 </div>
                 <div>
-                    <div className="rounded-lg absolute right-[70px] top-[300px] shadow-lg flex flex-col p-2" style={{ alignItems: 'center', border: '1px solid #EFC23566', maxWidth: "410px" }}>
+                    <div className="rounded-lg absolute right-[70px] top-[295px] shadow-lg flex flex-col p-2" style={{ alignItems: 'center', border: '1px solid #EFC23566', maxWidth: "410px" }}>
                         <Image
                             src="/card2image.svg"
                             alt="Center Image"
@@ -49,10 +49,10 @@ const RoadmapWebComp = () => {
                             width={100}
                             height={100}
                         />
-                        <h1 className="text-2xl mb-3 text-white text-center">
+                        <h1 className="text-2xl mb-3 text-white text-center font-chakra">
                             Full Profile Hero
                         </h1>
-                        <p className="text-sm text-[#969EB2] mb-3 text-center">
+                        <p className="text-sm text-[#969EB2] mb-3 text-center font-sans">
                             Upgrade your NFT into a Full Profile Pic Feature (FPFP) to make your hero a standout across your social platforms. Availability varies, enhancing the uniqueness of each hero!
                         </p>
                     </div>
@@ -73,10 +73,10 @@ const RoadmapWebComp = () => {
                             width={100}
                             height={100}
                         />
-                        <h1 className="text-2xl mb-3 text-white text-center">
+                        <h1 className="text-2xl mb-3 text-white text-center font-chakra">
                             3D Hero Avatar
                         </h1>
-                        <p className="text-sm text-[#969EB2] mb-3 text-center">
+                        <p className="text-sm text-[#969EB2] mb-3 text-center font-sans">
                             Step into the metaverse where your hero awaits! Each NFT not only represents ownership but springs to life as a 3D Hero Avatar, ready to explore and conquer.
                         </p>
                     </div>
@@ -97,10 +97,10 @@ const RoadmapWebComp = () => {
                             width={100}
                             height={100}
                         />
-                        <h1 className="text-2xl mb-3 text-white text-center">
+                        <h1 className="text-2xl mb-3 text-white text-center font-chakra">
                             Metaverse Zone
                         </h1>
-                        <p className="text-sm text-[#969EB2] mb-3 text-center">
+                        <p className="text-sm text-[#969EB2] mb-3 text-center font-sans">
                             Navigate through distinct zones in the metaverse, each tailored to the lore of your hero. It’s not just a game, it’s a quest across dimensions!
                         </p>
                     </div>
@@ -121,10 +121,10 @@ const RoadmapWebComp = () => {
                             width={100}
                             height={100}
                         />
-                        <h1 className="text-2xl mb-3 text-white text-center">
+                        <h1 className="text-2xl mb-3 text-white text-center font-chakra">
                             Comic book reveal
                         </h1>
-                        <p className="text-sm text-[#969EB2] mb-3 text-center">
+                        <p className="text-sm text-[#969EB2] mb-3 text-center font-sans">
                             {"Navigate through distinct zones in the metaverse, each tailored to the lore of your hero. It’s not just a game, it’s a quest across dimensions!"}                    </p>
                     </div>
                     <Image

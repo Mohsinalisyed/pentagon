@@ -8,7 +8,7 @@ const RoadMap = () => {
   return (
     <>
       <div className="min-h-screen flex flex-col items-center py-10 bg-black">
-        <h1 className="text-center text-4xl font-bold text-[#EFC235] mb-4 lg:mb-20">ROADMAP</h1>
+        <h1 className="text-center text-4xl font-bold text-[#EFC235] mb-4 lg:mb-20 font-chakra">ROADMAP</h1>
         <div className="p-5 bg-black flex flex-col items-center lg:hidden">
           <RoadmapComp heading="Reveal after" heading2='sold out' imgSrc="/card1image.svg" desc='Lounge areas with comfortable seating for relaxation between gaming sessions. Provide snacks, drink, and vending machine for refreshments.' />
           <Image

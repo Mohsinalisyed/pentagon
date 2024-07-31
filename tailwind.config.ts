@@ -33,6 +33,11 @@ const config: Config = {
         "273": "273px",
         "118": "118px",
       },
+      fontFamily: {
+        sans: ['var(--font-sans)', 'sans-serif'], 
+        chakra: ['var(--font-chakra)', 'sans-serif'],
+        archivo: ['var(--font-Archivo)', 'sans-serif']
+      },
     },
   },
   plugins: [],
