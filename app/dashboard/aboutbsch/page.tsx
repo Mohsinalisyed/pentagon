@@ -36,15 +36,15 @@ const AboutBSCH = () => {
 
           </div>
           <div className="mt-[30px] ml-[-5px] hidden lg:block">
-              <img src="/aboutimage2.png" alt="aboutimage"/>
+            <img src="/aboutimage2.png" alt="aboutimage" />
           </div>
           <div className="mt-[30px] flex justify-center lg:hidden">
-              <img src="/resabout1.png" alt="aboutimage" />
+            <img src="/resabout1.png" alt="aboutimage" />
           </div>
         </div>
         <div className="flex flex-col mt-[0px] xl:mt-[-90px]">
           <div className="hidden lg:block">
-              <img src="/aboutright1.png" alt="aboutimage" />
+            <img src="/aboutright1.png" alt="aboutimage" />
           </div>
           <div className="lg:pl-24 text-center lg:text-left">
             <h1 className="text-2xl mb-4 text-white">
@@ -62,11 +62,11 @@ const AboutBSCH = () => {
             </p>
 
           </div>
-          <div className="mt-[30px] flex justify-center lg:hidden" >  
-              <img src="/resabout2.png" alt="aboutimage" />    
+          <div className="mt-[30px] flex justify-center lg:hidden" >
+            <img src="/resabout2.png" alt="aboutimage" />
           </div>
         </div>
-     </div>
+      </div>
     </div>
   );
 };
