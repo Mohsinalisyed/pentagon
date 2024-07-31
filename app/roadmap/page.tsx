@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import RoadmapComp from "@/components/RoadmapComp";
 import RoadmapWebComp from "@/components/RoadmapWebComp";
+import Footer from "@/components/Footer";
 
 const RoadMap = () => {
   return (
@@ -69,6 +70,8 @@ const RoadMap = () => {
           <RoadmapWebComp />
         </div>
       </div>
+      <Footer />
+
     </>
   );
 };
