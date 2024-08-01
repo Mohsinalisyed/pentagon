@@ -18,7 +18,7 @@ const HomePage = () => {
   const chainId = useChainId();
   const HeroData: HeroDataTypes = getHeroData(chainId);
   // const { isConnected } = useWalletConnect();
-
+  console.log(HeroData, 'HeroData')
   return (
     <div>
       {width > 1280 ? (
