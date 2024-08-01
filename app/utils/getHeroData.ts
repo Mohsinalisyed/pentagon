@@ -108,19 +108,27 @@ export const getHeroData = (chainId: number): HeroDataTypes => {
 
     default:
       return {
-        chains: [],
-        chainContractAddress: "",
-        bannerSmall: "",
-        bannerLarge: "",
-        bannerSmallBG: "",
-        bannerSmallCard: "",
-        cardSmall: "",
-        cardLarge: "",
-        mainSmallLogo: "",
-        mainLargelogo: "",
-        eLogo: "",
-        addClass: "",
-        profile: "",
+        chains: [
+          {
+            ...baseData,
+            chainId: 1115,
+            chainName: "Core Testnet",
+            nativeCurrency: { name: "Core", symbol: "tCORE", decimals: 18 },
+          },
+        ],
+        chainContractAddress: "0x",
+        bannerSmall: "/assets/core/bannerSmall.svg",
+        bannerLarge: "/assets/core/bannerLarge.png",
+        bannerSmallBG: "/assets/core/bannerSmallBG.png",
+        bannerSmallCard: "/assets/core/bannerSmallCard.png",
+        // bannerLargeCard: "/assets/bannerLargeCard.png",
+        cardSmall: "/assets/cardSmall.png",
+        cardLarge: "/assets/cardLarge.png",
+        eLogo: "/assets/eLogo.svg",
+        mainSmallLogo: "/assets/core/mainLogo.svg",
+        mainLargelogo: "/assets/core/mainLogo.svg",
+        addClass: "bg-coreColor hover:bg-coreHoverColor",
+        profile: "#FF9211",
       };
   }
 };

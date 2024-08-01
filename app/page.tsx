@@ -14,7 +14,6 @@ import React from "react";
 import { FooterSvg } from "@/svg";
 
 const HomePage = () => {
-  const { width } = useViewport();
   const chainId = useChainId();
   const HeroData: HeroDataTypes = getHeroData(chainId);
   return (
