@@ -17,13 +17,11 @@ const HomePage = () => {
   const { width } = useViewport();
   const chainId = useChainId();
   const HeroData: HeroDataTypes = getHeroData(chainId);
-  // const { isConnected } = useWalletConnect();
-  console.log(HeroData, 'HeroData')
   return (
     <div>
-      {width > 1280 ? (
+      
         <div
-          className="w-full h-full bg-no-repeat bg-position-center bg-cover"
+        className="w-full h-full bg-no-repeat bg-position-center bg-cover hidden lg:block"
           style={{
             backgroundImage: `url(${HeroData.bannerLarge})`,
             aspectRatio: "16/9",
@@ -47,9 +45,10 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-      ) : (
+      <div className="block lg:hidden">
         <HeroSmall chainId={chainId} />
-      )}
+   </div>
+ 
     </div>
   );
 };
