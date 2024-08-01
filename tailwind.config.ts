@@ -14,14 +14,17 @@ const config: Config = {
     colors: {
       coreColor: "#FF9211",
       coreHoverColor: "#FF8A00",
+      coreLightColor: "#F0C534",
       pentagonColor: "#5D41DF",
       pentagonHoverColor: "#5740bd",
       multiversColor: "#0BBCA3",
-      white: '#fff',
+      white: "#FFFFFF",
       greyColor: "#232323",
-      borderColor: '#494747',
-      yellowLight: "#F6D92B"
-
+      borderColor: "#494747",
+      purpleColor: "#5E40E7",
+      black: "#000000",
+      yellowLight: "#EFC235",
+      darkGrayColor: "#1A1A1A",
     },
     extend: {
       backgroundImage: {
@@ -34,9 +37,9 @@ const config: Config = {
         "118": "118px",
       },
       fontFamily: {
-        sans: ['var(--font-sans)', 'sans-serif'], 
-        chakra: ['var(--font-chakra)', 'sans-serif'],
-        archivo: ['var(--font-Archivo)', 'sans-serif']
+        sans: ["var(--font-sans)", "sans-serif"],
+        chakra: ["var(--font-chakra)", "sans-serif"],
+        archivo: ["var(--font-Archivo)", "sans-serif"],
       },
     },
   },

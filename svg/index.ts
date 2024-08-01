@@ -1,0 +1,7 @@
+export * from "./ProfileSvg";
+export * from "./AboutSvg";
+export * from "./ArrowSvg";
+export * from "./FooterSvg";
+export * from "./SiteLogoSvg";
+export * from "./BreadcrumSvg";
+export * from "./CardOneSvg";

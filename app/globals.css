@@ -33,3 +33,10 @@ body {
   color: gray;
   cursor: not-allowed;
 }
+
+@media screen and (min-width: 1920px) {
+ .mint-button-style {
+    top: 44%;
+    right: 37%;
+  }
+}

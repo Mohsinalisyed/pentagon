@@ -1,5 +1,4 @@
-// walletConnectUtil.js
-import { useConnect, useAccount, useDisconnect } from "wagmi";
+import { useConnect, useAccount, useDisconnect, useChainId } from "wagmi";
 import { useState, useEffect } from "react";
 
 export const useWalletConnect = () => {
@@ -7,7 +6,7 @@ export const useWalletConnect = () => {
   const { address, isConnected } = useAccount();
   const { disconnect } = useDisconnect();
   const [hydrated, setHydrated] = useState(false);
-
+  const chainId = useChainId();
   const metaMaskConnector = connectors.find(
     (connector) => connector.id === "metaMaskSDK"
   );
@@ -18,7 +17,7 @@ export const useWalletConnect = () => {
 
   const connectWallet = () => {
     if (metaMaskConnector) {
-      connect({ connector: metaMaskConnector, chainId: 1115 });
+      connect({ connector: metaMaskConnector, chainId });
     }
   };
 

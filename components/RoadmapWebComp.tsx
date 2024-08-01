@@ -25,7 +25,7 @@ const RoadmapWebComp = () => {
                             width={100}
                             height={100}
                         />
-                        <h1 className="text-2xl mb-3 text-white text-center font-chakra">
+                        <h1 className="text-2xl mb-3 text-white text-center font-chakra uppercase font-bold">
                             100% Art reveal
                         </h1>
                         <p className="text-sm text-[#969EB2] mb-3 text-center font-sans">
@@ -49,7 +49,7 @@ const RoadmapWebComp = () => {
                             width={100}
                             height={100}
                         />
-                        <h1 className="text-2xl mb-3 text-white text-center font-chakra">
+                        <h1 className="text-2xl mb-3 text-white text-center font-chakra uppercase font-bold">
                             Full Profile Hero
                         </h1>
                         <p className="text-sm text-[#969EB2] mb-3 text-center font-sans">
@@ -73,7 +73,7 @@ const RoadmapWebComp = () => {
                             width={100}
                             height={100}
                         />
-                        <h1 className="text-2xl mb-3 text-white text-center font-chakra">
+                        <h1 className="text-2xl mb-3 text-white text-center font-chakra uppercase font-bold">
                             3D Hero Avatar
                         </h1>
                         <p className="text-sm text-[#969EB2] mb-3 text-center font-sans">
@@ -97,7 +97,7 @@ const RoadmapWebComp = () => {
                             width={100}
                             height={100}
                         />
-                        <h1 className="text-2xl mb-3 text-white text-center font-chakra">
+                        <h1 className="text-2xl mb-3 text-white text-center font-chakra uppercase font-bold">
                             Metaverse Zone
                         </h1>
                         <p className="text-sm text-[#969EB2] mb-3 text-center font-sans">
@@ -121,7 +121,7 @@ const RoadmapWebComp = () => {
                             width={100}
                             height={100}
                         />
-                        <h1 className="text-2xl mb-3 text-white text-center font-chakra">
+                        <h1 className="text-2xl mb-3 text-white text-center font-chakra uppercase font-bold">
                             Comic book reveal
                         </h1>
                         <p className="text-sm text-[#969EB2] mb-3 text-center font-sans">

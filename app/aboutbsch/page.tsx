@@ -1,17 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
 "use client"
 import Footer from "@/components/Footer";
-import { useViewport } from "@/hooks/useViewPort";
-import AboutLogo from "@/Svg/AboutLogo";
+import { AboutSvg } from "@/svg";
 import React from "react";
 
 const AboutBSCH = () => {
   return (
     <>
       <div className="bg-black text-white p-8 relative max-w-6xl mx-auto px-4 py-10">
-        <h1 className="text-center text-4xl font-bold text-[#EFC235] mb-16 font-chakra">ABOUT US</h1>
+        <h1 className="text-center text-4xl font-bold text-yellowLight my-20 font-chakra">ABOUT US</h1>
         <div className="absolute mt-[26%] ml-[44%] hidden xl:block">
-          <AboutLogo />
+          <AboutSvg />
         </div>
         <div className="flex flex-col lg:flex-row">
           <div className="flex flex-col">
