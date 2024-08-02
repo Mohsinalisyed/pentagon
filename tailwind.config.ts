@@ -25,12 +25,22 @@ const config: Config = {
       black: "#000000",
       yellowLight: "#EFC235",
       darkGrayColor: "#1A1A1A",
+      lightGrayColor: "#969EB2",
     },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+      borderRadius(utils) {
+        return {
+          "4xl": "2.5rem",
+        };
+      },
+      maxWidth:{
+        "410": "410px",
+        "430": "430px",
       },
       spacing: {
         "273": "273px",
@@ -40,6 +50,7 @@ const config: Config = {
         sans: ["var(--font-sans)", "sans-serif"],
         chakra: ["var(--font-chakra)", "sans-serif"],
         archivo: ["var(--font-Archivo)", "sans-serif"],
+        lexand: ["var(--font-lexand)", "sans-serif"],
       },
     },
   },

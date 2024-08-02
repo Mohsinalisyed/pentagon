@@ -1,3 +1,4 @@
+import { CardFiveSvg, CardFourSvg, CardOneSvg, CardThreeSvg, CardTwoSvg } from '@/svg';
 import Image from 'next/image';
 import React from 'react';
 
@@ -17,18 +18,12 @@ const RoadmapWebComp = () => {
                 }}
             >
                 <div className='flex justify-end'>
-                    <div className="rounded-lg absolute left-[50px] shadow-lg flex flex-col p-2" style={{ alignItems: 'center', border: '1px solid #EFC23566', maxWidth: "410px" }}>
-                        <Image
-                            src="/card1image.svg"
-                            alt="Center Image"
-                            className="w-16 my-2"
-                            width={100}
-                            height={100}
-                        />
+                    <div className="rounded-4xl absolute left-[50px] shadow-lg flex flex-col p-2 items-center border border-solid border-yellowLight max-w-410">
+                        <CardOneSvg />
                         <h1 className="text-2xl mb-3 text-white text-center font-chakra uppercase font-bold">
                             100% Art reveal
                         </h1>
-                        <p className="text-sm text-[#969EB2] mb-3 text-center font-sans">
+                        <p className="text-sm text-lightGrayColor mb-3 text-center font-sans">
                             Hold tight! The true identity of your hero will be unveiled only after all units are claimed. Get ready for the ultimate reveal that will ignite the collector in you!
                         </p>
                     </div>
@@ -41,18 +36,12 @@ const RoadmapWebComp = () => {
                     />
                 </div>
                 <div>
-                    <div className="rounded-lg absolute right-[50px] top-[295px] shadow-lg flex flex-col p-2" style={{ alignItems: 'center', border: '1px solid #EFC23566', maxWidth: "430px" }}>
-                        <Image
-                            src="/card2image.svg"
-                            alt="Center Image"
-                            className="w-16 my-2"
-                            width={100}
-                            height={100}
-                        />
+                    <div className="rounded-4xl absolute right-[50px] top-[295px] shadow-lg flex flex-col p-2 border border-solid border-yellowLight items-center max-w-430">
+                        <CardTwoSvg />
                         <h1 className="text-2xl mb-3 text-white text-center font-chakra uppercase font-bold">
                             Full Profile Hero
                         </h1>
-                        <p className="text-sm text-[#969EB2] mb-3 text-center font-sans">
+                        <p className="text-sm text-lightGrayColor mb-3 text-center font-sans">
                             Upgrade your NFT into a Full Profile Pic Feature (FPFP) to make your hero a standout across your social platforms. Availability varies, enhancing the uniqueness of each hero!
                         </p>
                     </div>
@@ -65,18 +54,12 @@ const RoadmapWebComp = () => {
                     />
                 </div>
                 <div className='flex justify-end'>
-                    <div className="rounded-lg absolute left-[50px] top-[620px] shadow-lg flex flex-col p-2" style={{ alignItems: 'center', border: '1px solid #EFC23566', maxWidth: "410px" }}>
-                        <Image
-                            src="/card3image.svg"
-                            alt="Center Image"
-                            className="w-16 my-2"
-                            width={100}
-                            height={100}
-                        />
+                    <div className="rounded-4xl absolute left-[50px] top-[620px] shadow-lg flex flex-col p-2 border border-solid border-yellowLight items-center max-w-410">
+                    <CardThreeSvg />
                         <h1 className="text-2xl mb-3 text-white text-center font-chakra uppercase font-bold">
                             3D Hero Avatar
                         </h1>
-                        <p className="text-sm text-[#969EB2] mb-3 text-center font-sans">
+                        <p className="text-sm text-lightGrayColor mb-3 text-center font-sans">
                             Step into the metaverse where your hero awaits! Each NFT not only represents ownership but springs to life as a 3D Hero Avatar, ready to explore and conquer.
                         </p>
                     </div>
@@ -89,18 +72,12 @@ const RoadmapWebComp = () => {
                     />
                 </div>
                 <div>
-                    <div className="rounded-lg absolute right-[50px] top-[955px] shadow-lg flex flex-col p-2" style={{ alignItems: 'center', border: '1px solid #EFC23566', maxWidth: "430px" }}>
-                        <Image
-                            src="/card4image.svg"
-                            alt="Center Image"
-                            className="w-16 my-2"
-                            width={100}
-                            height={100}
-                        />
+                    <div className="rounded-4xl absolute right-[50px] top-[955px] shadow-lg flex flex-col p-2 border border-solid border-yellowLight items-center max-w-430">
+                        <CardFourSvg />
                         <h1 className="text-2xl mb-3 text-white text-center font-chakra uppercase font-bold">
                             Metaverse Zone
                         </h1>
-                        <p className="text-sm text-[#969EB2] mb-3 text-center font-sans">
+                        <p className="text-sm text-lightGrayColor mb-3 text-center font-sans">
                             Navigate through distinct zones in the metaverse, each tailored to the lore of your hero. It’s not just a game, it’s a quest across dimensions!
                         </p>
                     </div>
@@ -113,18 +90,12 @@ const RoadmapWebComp = () => {
                     />
                 </div>
                 <div className='flex justify-end'>
-                    <div className="rounded-lg absolute left-[50px] top-[1275px] shadow-lg flex flex-col p-2" style={{ alignItems: 'center', border: '1px solid #EFC23566', maxWidth: "410px" }}>
-                        <Image
-                            src="/card5image.svg"
-                            alt="Center Image"
-                            className="w-16 my-2"
-                            width={100}
-                            height={100}
-                        />
+                    <div className="rounded-4xl absolute left-[50px] top-[1275px] shadow-lg flex flex-col p-2 border border-solid border-yellowLight items-center max-w-410">
+                        <CardFiveSvg />
                         <h1 className="text-2xl mb-3 text-white text-center font-chakra uppercase font-bold">
                             Comic book reveal
                         </h1>
-                        <p className="text-sm text-[#969EB2] mb-3 text-center font-sans">
+                        <p className="text-sm text-lightGrayColor mb-3 text-center font-sans">
                             {"Navigate through distinct zones in the metaverse, each tailored to the lore of your hero. It’s not just a game, it’s a quest across dimensions!"}                    </p>
                     </div>
                     <Image

@@ -20,9 +20,9 @@ export const HeroTextualContent: React.FC<{
       >
         <div className="font-extrabold text-white">Collect them all</div>
         <div
-          className={
-            isLarge ? " 2xl:text-[40px] font-normal text-white" : "text-[28px] font-normal text-white"
-          }
+          className={`${
+            isLarge ? "2xl:text-[40px]" : "text-[28px]"
+          } font-normal text-white`}
         >
           <span className="font-extrabold">BCSH</span> NFT trading cards
         </div>

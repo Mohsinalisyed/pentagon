@@ -8,11 +8,8 @@ const RoadmapComp: React.FC<RoadmapCompProps> = ({
   heading2,
 }) => {
   return (
-    <div
-      className="rounded-lg shadow-lg flex flex-col p-5 my-8"
-      style={{ alignItems: "center", border: "1px solid #EFC23566" }}
-    >
-      <img src={imgSrc} alt="Center Image" className="mb-5"/>
+    <div className="rounded-lg shadow-lg flex flex-col p-5 my-8 border border-solid border-yellowLight items-center">
+      <img src={imgSrc} alt="Center Image" className="mb-5" />
       <h1 className="text-3xl mb-4 text-white text-center uppercase font-chakra font-bold">
         {heading}
         <br />

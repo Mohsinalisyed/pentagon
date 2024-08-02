@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useChainId, useDisconnect, useReadContract } from "wagmi";
 import { useWalletConnect } from "@/app/utils/walletConnect";
 import { formatAddress } from "@/app/utils/utils";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Menu from "../public/menu.svg";
 import { coreDistributorAbi } from "@/abi/core/coreDistributorAbi";
 import { getHeroData } from "@/app/utils";
@@ -16,11 +16,10 @@ import { usePathname } from "next/navigation";
 
 export const Header = () => {
   const { disconnect } = useDisconnect();
-  const { address, isConnected, hydrated, connectWallet } = useWalletConnect();
+  const { address, isConnected, connectWallet } = useWalletConnect();
   const chainId = useChainId();
   const HeroData: HeroDataTypes = getHeroData(chainId);
   const pathname = usePathname();
-  console.log("🚀 ~ Header ~ pathname:", pathname);
 
   const {
     data: balance,
@@ -39,6 +38,10 @@ export const Header = () => {
   }
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [pathname]);
 
   const navLinks = [
     { name: "ABOUT BSCH", href: "/aboutbsch", disabled: false },
@@ -91,7 +94,7 @@ export const Header = () => {
   const renderBuyNowButton = () => (
     <button
       onClick={connectWallet}
-      className="bg-coreColor hover:bg-coreHoverColor text-black lg:text-white font-bold py-2 px-4 rounded border-purple-500 mr-4 uppercase"
+      className="bg-coreColor hover:bg-coreHoverColor text-black lg:text-white font-bold py-2 px-4 rounded border-purple-500 mr-4 lg:w-[142px] lg:h-[50px] w-[75px] h-[29.55px] text-[10px] lg:text-[16px]"
     >
       Buy Now
     </button>
@@ -114,9 +117,7 @@ export const Header = () => {
           <SiteLogoSvg />
         </Link>
         <div className="flex items-center lg:hidden gap-x-5 mb-3">
-          {hydrated && isConnected
-            ? renderAddress(address || "")
-            : renderBuyNowButton()}
+          {isConnected ? renderAddress(address || "") : renderBuyNowButton()}
           <button
             className="text-white"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -127,7 +128,7 @@ export const Header = () => {
       </div>
       {renderNavLinks(navLinks)}
       <div className="hidden lg:flex items-center space-x-4">
-        {hydrated && isConnected ? (
+        {isConnected ? (
           <div className="flex items-center">
             <button className="bg-black hover:bg-purple-600 text-white-500 border border-coreColor py-2 px-4 rounded mr-2">
               {isLoading
@@ -149,7 +150,7 @@ export const Header = () => {
             </p>
           </div>
         ) : (
-          hydrated && renderBuyNowButton()
+          renderBuyNowButton()
         )}
       </div>
     </div>

@@ -1,6 +1,6 @@
 import { IconSvgProps } from "@/types";
 
-export const CardOneSvg: React.FC<IconSvgProps> = (props) => {
+export const CardOneSvg: React.FC<IconSvgProps> = () => {
   return (
     <svg
       width="75"
@@ -8,6 +8,7 @@ export const CardOneSvg: React.FC<IconSvgProps> = (props) => {
       viewBox="0 0 75 75"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className="my-2"
     >
       <g clipPath="url(#clip0_456_700)">
         <path

@@ -3,14 +3,18 @@
 "use client";
 
 import React from "react";
-import { useWaitForTransactionReceipt, useWriteContract } from "wagmi";
+import {
+  useWaitForTransactionReceipt,
+  useWriteContract,
+  useBalance,
+} from "wagmi";
 import { useWalletConnect } from "../app/utils/walletConnect";
-import { parseEther } from "viem";
+import { parseEther, formatUnits } from "viem";
 import { useQueryClient } from "@tanstack/react-query";
 import { coreMintAbi } from "@/abi/core/coreMintAbi";
 import { ArrowSvg } from "@/svg";
 import { HeroDataTypes, MintButtonProps } from "@/types";
-import { getHeroData } from "@/app/utils";
+import { errorToast, getHeroData, successToast } from "@/app/utils";
 import { useViewport } from "@/hooks/useViewPort";
 import { LoadingSpinner } from "./LoadingSpinner";
 
@@ -19,32 +23,31 @@ const MintButtonLarge: React.FC<MintButtonProps> = ({
   isLoading,
   isPending,
 }) => (
-  <div
-    className="w-full"
-    onClick={handleCoreMint}
-  >
+  <div className="w-full" onClick={handleCoreMint}>
     <div className="absolute top-[43%] right-[34%] mint-button-style">
-      <div className="text-2xl 2xl:text-4xl font-light uppercase text-white">initiate</div>
-    <div className="flex gap-2 items-center justify-start h-28 max-h-28">
-      <div className="bg-white h-full flex items-center px-3">
-        <ArrowSvg />
+      <div className="text-2xl 2xl:text-4xl font-light uppercase text-white">
+        initiate
       </div>
-      <div
-        className="px-10 bg-white cursor-pointer h-full uppercase text-black flex items-center"
-        style={{
-          clipPath:
-            "polygon(0 0, calc(100% - 25px) 0, 100% 25px, 100% 100%, 0 100%)",
-        }}
-      >
-        {isLoading || isPending ? (
-          <LoadingSpinner />
-        ) : (
-          <p className="text-2xl md:text-7xl text-[90px] font-extrabold">
-            Mint
-          </p>
-        )}
+      <div className="flex gap-2 items-center justify-start h-28 max-h-28">
+        <div className="bg-white h-full flex items-center px-3">
+          <ArrowSvg />
+        </div>
+        <div
+          className="px-10 bg-white cursor-pointer h-full uppercase text-black flex items-center"
+          style={{
+            clipPath:
+              "polygon(0 0, calc(100% - 25px) 0, 100% 25px, 100% 100%, 0 100%)",
+          }}
+        >
+          {isLoading || isPending ? (
+            <LoadingSpinner />
+          ) : (
+            <p className="text-2xl md:text-7xl text-[90px] font-extrabold">
+              Mint
+            </p>
+          )}
+        </div>
       </div>
-    </div>
     </div>
   </div>
 );
@@ -104,9 +107,15 @@ const MintButton: React.FC<{ isLarge?: boolean; chainId: number }> = ({
   isLarge,
   chainId,
 }) => {
-  const { connectWallet, isConnected } = useWalletConnect();
+  const { connectWallet, isConnected, address } = useWalletConnect();
   const queryClient = useQueryClient();
   const { width } = useViewport();
+  const { data: balance } = useBalance({
+    address: address,
+    chainId: chainId,
+    blockTag: "latest",
+  });
+  const walletBalance = formatUnits(balance?.value || BigInt(0), 18);
   const finalWidth = width > 1440 ? 300 : width > 600 ? 130 : 90;
   const finalHeight = width > 1440 ? 344 : width > 600 ? 149 : 104;
   const {
@@ -117,6 +126,14 @@ const MintButton: React.FC<{ isLarge?: boolean; chainId: number }> = ({
     mutation: {
       onSuccess: () => {
         queryClient.invalidateQueries();
+        successToast("Transaction Successful");
+      },
+      onError: (error) => {
+        errorToast(
+          error.name === "ContractFunctionExecutionError"
+            ? "Insufficient Balance"
+            : "User rejected the request."
+        );
       },
     },
   });

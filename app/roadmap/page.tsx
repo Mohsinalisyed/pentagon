@@ -4,12 +4,13 @@ import Image from "next/image";
 import RoadmapComp from "@/components/RoadmapComp";
 import RoadmapWebComp from "@/components/RoadmapWebComp";
 import Footer from "@/components/Footer";
+import { Heading } from "@/components/Heading";
 
 const RoadMap = () => {
   return (
     <>
       <div className="min-h-screen flex flex-col items-center py-10 bg-black">
-        <h1 className="text-center text-4xl font-bold text-yellowLight mb-4 lg:my-20 font-chakra">ROADMAP</h1>
+        <Heading title="Roadmap" />
         <div className="p-5 bg-black flex flex-col items-center lg:hidden">
           <RoadmapComp heading="Reveal after" heading2='sold out' imgSrc="/card1image.svg" desc='Lounge areas with comfortable seating for relaxation between gaming sessions. Provide snacks, drink, and vending machine for refreshments.' />
           <Image

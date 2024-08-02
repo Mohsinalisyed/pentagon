@@ -13,7 +13,7 @@ const HeroSmall: React.FC<{ chainId: number }> = ({ chainId }) => {
   const { isConnected } = useWalletConnect();
 
   return (
-    <div className="xl:hidden">
+    <div className="block lg:hidden">
       <div
         className="w-full bg-no-repeat bg-cover bg-center pt-7 pb-12"
         style={{
