@@ -10,7 +10,7 @@ const AboutBSCH = () => {
     <>
       <div className="bg-black text-white p-8 relative max-w-7xl mx-auto px-4 py-10">
         <Heading title="About us" />
-        <div className="absolute mt-[26%] ml-[44%] hidden xl:block">
+        <div className="absolute mt-[22%] ml-[42%] hidden xl:block">
           <AboutSvg />
         </div>
         <div className="flex flex-col lg:flex-row">
@@ -43,7 +43,7 @@ const AboutBSCH = () => {
             <div className="hidden lg:block">
               <img src="/aboutright1.png" alt="aboutimage" />
             </div>
-            <div className="lg:pl-24 text-center lg:text-left px-6 lg:px-0 font-bold">
+            <div className="lg:pl-32 text-center lg:text-left px-6 lg:px-0 font-bold">
               <h1 className="text-2xl mb-4 text-white uppercase font-chakra text-left">
                 {`But BCSH is about more than just collecting—it's about participating.`}
               </h1>

@@ -102,8 +102,13 @@ export const Header = () => {
 
   const renderAddress = (address: string) => (
     <div className="flex items-center">
-      <ProfileSvg color={HeroData.profile} width={"30px"} height={"30px"} />
-      <p className="text-white ml-2">{formatAddress(address || "")}</p>
+      <ProfileSvg
+        color={HeroData.profile}
+        width={"30px"}
+        height={"30px"}
+        fill={"black"}
+      />
+      <p className="text-white ml-2" onClick={() => disconnect()}>{formatAddress(address || "")}</p>
     </div>
   );
 
@@ -141,6 +146,7 @@ export const Header = () => {
               color={HeroData.profile}
               width={"45px"}
               height={"45px"}
+              fill={"white"}
             />
             <p
               className="text-light cursor-pointer pl-2"

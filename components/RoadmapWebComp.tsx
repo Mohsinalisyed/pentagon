@@ -4,7 +4,7 @@ import React from 'react';
 
 const RoadmapWebComp = () => {
     return (
-        <div className='m-max-6xl'>
+        <div className='m-max-6xl p-[10px]'>
             <div
                 style={{
                     backgroundImage: "url('/roadmap.png')",
@@ -30,9 +30,9 @@ const RoadmapWebComp = () => {
                     <Image
                         src="/assets/roadmap/web/imagecard1.png"
                         alt="Center Image"
-                        className="mt-0 mr-20 z-50"
-                        width={340}
-                        height={340}
+                        className="m-[-8px] mr-20 z-50 w-[36%]"
+                        width={482}
+                        height={364}
                     />
                 </div>
                 <div>
@@ -48,9 +48,9 @@ const RoadmapWebComp = () => {
                     <Image
                         src="/assets/roadmap/web/imagecard2.png"
                         alt="Center Image"
-                        className="mt-[-20px] ml-16 z-50"
-                        width={340}
-                        height={300}
+                        className="mt-[5px] ml-16 z-50 w-[34%]"
+                        width={425}
+                        height={401}
                     />
                 </div>
                 <div className='flex justify-end'>
@@ -66,9 +66,9 @@ const RoadmapWebComp = () => {
                     <Image
                         src="/assets/roadmap/web/imagecard3.png"
                         alt="Center Image"
-                        className="mt-[-20px] mr-20 z-50"
-                        width={270}
-                        height={270}
+                        className="mt-[-48px] mr-24 z-50 w-[30%]"
+                        width={390}
+                        height={485}
                     />
                 </div>
                 <div>
@@ -84,9 +84,9 @@ const RoadmapWebComp = () => {
                     <Image
                         src="/assets/roadmap/web/imagecard4.png"
                         alt="Center Image"
-                        className="mt-[-20px] ml-12 z-50"
-                        width={300}
-                        height={300}
+                        className="mt-[-60px] ml-16 z-50 w-[33%]"
+                        width={410}
+                        height={483}
                     />
                 </div>
                 <div className='flex justify-end'>
@@ -101,9 +101,9 @@ const RoadmapWebComp = () => {
                     <Image
                         src="/assets/roadmap/web/imagecard5.png"
                         alt="Center Image"
-                        className="mt-[-60px] mr-20 z-50"
-                        width={260}
-                        height={260}
+                        className="mt-[-110px] mr-32 z-50 w-[28%]"
+                        width={358}
+                        height={586}
                     />
                 </div>
             </div>

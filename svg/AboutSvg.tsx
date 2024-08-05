@@ -3,12 +3,11 @@ import React from "react";
 
 export const AboutSvg: React.FC<IconSvgProps> = () => {
   return (
-    <div>
+    <div className="w-[273px] bg-black flex justify-center items-center rounded-[135px] border-[20px] border-black">
       <svg
-        width="180"
-        height="180"
+        width="230"
+        height="230"
         viewBox="0 0 231 230"
-        style={{ borderRadius: "160px", border: "20px solid black" }}
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"

@@ -1,4 +1,21 @@
 import { HeroDataTypes } from "@/types";
+import { baseUrl } from "./enums";
+
+const defaultValues = {
+  chainContractAddress: "0x",
+  bannerSmall: "/assets/core/bannerSmall.svg",
+  bannerLarge: "/assets/core/bannerLarge.png",
+  bannerSmallBG: "/assets/core/bannerSmallBG.png",
+  bannerSmallCard: "/assets/core/bannerSmallCard.png",
+  // bannerLargeCard: "/assets/bannerLargeCard.png",
+  cardSmall: "/assets/cardSmall.png",
+  cardLarge: "/assets/cardLarge.png",
+  eLogo: "/assets/eLogo.svg",
+  mainSmallLogo: "/assets/core/mainLogo.svg",
+  mainLargelogo: "/assets/core/mainLogo.svg",
+  addClass: "bg-coreColor hover:bg-coreHoverColor",
+  profile: "#FF9211",
+};
 
 export const getHeroData = (chainId: number): HeroDataTypes => {
   const baseData = {
@@ -15,7 +32,7 @@ export const getHeroData = (chainId: number): HeroDataTypes => {
         blockCreated: 14353601,
       },
     },
-    rpcUrls: "https://rpc.test.btcs.network/",
+    rpcUrls: baseUrl.btcs,
     blockExplorers: {
       default: {
         name: "Etherscan",
@@ -35,19 +52,7 @@ export const getHeroData = (chainId: number): HeroDataTypes => {
             nativeCurrency: { name: "Core", symbol: "tCORE", decimals: 18 },
           },
         ],
-        chainContractAddress: "0x",
-        bannerSmall: "/assets/core/bannerSmall.svg",
-        bannerLarge: "/assets/core/bannerLarge.png",
-        bannerSmallBG: "/assets/core/bannerSmallBG.png",
-        bannerSmallCard: "/assets/core/bannerSmallCard.png",
-        // bannerLargeCard: "/assets/bannerLargeCard.png",
-        cardSmall: "/assets/cardSmall.png",
-        cardLarge: "/assets/cardLarge.png",
-        eLogo: "/assets/eLogo.svg",
-        mainSmallLogo: "/assets/core/mainLogo.svg",
-        mainLargelogo: "/assets/core/mainLogo.svg",
-        addClass: "bg-coreColor hover:bg-coreHoverColor",
-        profile: "#FF9211",
+        ...defaultValues,
       };
 
     case 2:
@@ -116,19 +121,7 @@ export const getHeroData = (chainId: number): HeroDataTypes => {
             nativeCurrency: { name: "Core", symbol: "tCORE", decimals: 18 },
           },
         ],
-        chainContractAddress: "0x",
-        bannerSmall: "/assets/core/bannerSmall.svg",
-        bannerLarge: "/assets/core/bannerLarge.png",
-        bannerSmallBG: "/assets/core/bannerSmallBG.png",
-        bannerSmallCard: "/assets/core/bannerSmallCard.png",
-        // bannerLargeCard: "/assets/bannerLargeCard.png",
-        cardSmall: "/assets/cardSmall.png",
-        cardLarge: "/assets/cardLarge.png",
-        eLogo: "/assets/eLogo.svg",
-        mainSmallLogo: "/assets/core/mainLogo.svg",
-        mainLargelogo: "/assets/core/mainLogo.svg",
-        addClass: "bg-coreColor hover:bg-coreHoverColor",
-        profile: "#FF9211",
+        ...defaultValues,
       };
   }
 };

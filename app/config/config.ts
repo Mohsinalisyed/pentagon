@@ -2,6 +2,7 @@ import { http, createConfig, } from "wagmi";
 import { base, mainnet, optimism,  } from "wagmi/chains";
 import { injected, metaMask, safe, walletConnect } from "wagmi/connectors";
 import { type Chain } from "viem";
+import { baseUrl } from "../utils";
 
 const projectId = "d5ff6a2009db22fbacced7f98dca4bd5";
 
@@ -10,7 +11,7 @@ export const coreTestNet = {
   name: "Core Testnet",
   nativeCurrency: { name: "Core", symbol: "tCORE", decimals: 18 },
   rpcUrls: {
-    default: { http: ["https://rpc.test.btcs.network/"] },
+    default: { http: [baseUrl.btcs] },
   },
   blockExplorers: {
     default: { name: "Etherscan", url: "https://scan.test.btcs.network/" },
@@ -36,7 +37,7 @@ export const config = createConfig({
   multiInjectedProviderDiscovery: false,
   connectors: [metaMask()],
   transports: {
-    [coreTestNet.id]: http('https://rpc.test.btcs.network/'),
+    [coreTestNet.id]: http(baseUrl.btcs),
   },
   ssr: true
 });

@@ -5,6 +5,7 @@ export type IconSvgProps = SVGProps<SVGSVGElement> & {
   color?: string;
   width?: string;
   height?: string;
+  fill?:string;
   onClick?: () => void;
 };
 
@@ -19,7 +20,7 @@ export interface MintButtonProps {
 
 export interface RoadmapCompProps {
   heading: string;
-  imgSrc: string;
+  imgSrc: string | React.FC<IconSvgProps>;
   desc: string;
   heading2: string;
 }

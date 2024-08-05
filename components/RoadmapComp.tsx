@@ -9,7 +9,7 @@ const RoadmapComp: React.FC<RoadmapCompProps> = ({
 }) => {
   return (
     <div className="rounded-lg shadow-lg flex flex-col p-5 my-8 border border-solid border-yellowLight items-center">
-      <img src={imgSrc} alt="Center Image" className="mb-5" />
+      {React.createElement(imgSrc)}
       <h1 className="text-3xl mb-4 text-white text-center uppercase font-chakra font-bold">
         {heading}
         <br />

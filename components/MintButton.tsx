@@ -65,12 +65,12 @@ const MintButtonSmall: React.FC<MintButtonProps> = ({
     <div className="h-full relative" onClick={handleCoreMint}>
       <img src={HeroData.bannerSmall} alt="Banner Image" className="w-full" />
       <div className="w-full absolute top-[38%] flex flex-col justify-center items-center">
-        <div className="flex gap-2 items-center h-14 max-h-14 relative ">
-          <div className="w-full text-xl font-light uppercase flex justify-start absolute top-[-45%] text-white">
+        <div className="flex gap-2 items-center h-[6.5rem] max-h-[6.5rem] relative ">
+          <div className="w-full text-4xl font-light uppercase flex justify-start absolute top-[-45%] text-white">
             initiate
           </div>
           <div className="bg-white h-full flex items-center px-3">
-            <ArrowSvg width="40px" height="40px" />
+            <ArrowSvg width="80px" height="80px" />
           </div>
           <div
             className="px-10 bg-white cursor-pointer h-full uppercase text-black flex items-center"
@@ -82,7 +82,7 @@ const MintButtonSmall: React.FC<MintButtonProps> = ({
             {isLoading || isPending ? (
               <LoadingSpinner />
             ) : (
-              <p className="text-5xl font-extrabold">Mint</p>
+              <p className="text-[5rem] leading-[1] font-[1000]">Mint</p>
             )}
           </div>
         </div>
