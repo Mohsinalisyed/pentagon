@@ -66,7 +66,7 @@ const AboutBSCH = () => {
             </div>
           </div>
         </div>
-        <p className="text-yellowLight text-left pt-8 px-2 text-[20px] lg:text-[25px] font-normal font-chakra leading-5 lg:leading-none">
+        <p className="text-yellowLight text-left lg:pt-8 lg:px-2 text-[20px] lg:text-[25px] font-normal font-chakra leading-5 lg:leading-none pt-0 px-9">
           Get ready to explore, interact, and be part of something bigger.
           Welcome to the Blockchain Superheroes experience!
         </p>

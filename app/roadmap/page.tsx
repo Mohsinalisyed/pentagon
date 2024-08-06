@@ -68,7 +68,7 @@ const RoadMap = () => {
           />
 
         </div>
-        <div className="w-full max-w-5xl shadow-lg rounded-lg overflow-hidden hidden lg:block">
+        <div className="w-full max-w-[78rem] shadow-lg rounded-lg overflow-hidden hidden lg:block">
           <RoadmapWebComp />
         </div>
       </div>
