@@ -94,7 +94,7 @@ export const Header = () => {
   const renderBuyNowButton = () => (
     <button
       onClick={connectWallet}
-      className="bg-coreColor hover:bg-coreHoverColor text-black lg:text-white font-bold py-2 px-4 rounded border-purple-500 mr-4 lg:w-[142px] lg:h-[50px] w-[75px] h-[29.55px] text-[10px] lg:text-[16px] uppercase"
+      className="bg-coreColor hover:bg-coreHoverColor text-black lg:text-white font-bold py-2 px-4 rounded border-purple-500 mr-4 lg:w-[142px] lg:h-[50px] w-[82px] h-[29.55px] text-[10px] lg:text-[16px] uppercase"
     >
       Buy Now
     </button>
