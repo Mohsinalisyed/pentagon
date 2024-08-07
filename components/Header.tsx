@@ -1,18 +1,17 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { useChainId, useDisconnect, useReadContract } from "wagmi";
 import { useWalletConnect } from "@/app/utils/walletConnect";
 import { formatAddress } from "@/app/utils/utils";
-import { useEffect, useState } from "react";
-import Menu from "../public/menu.svg";
+import { useContext, useEffect, useState } from "react";
 import { coreDistributorAbi } from "@/abi/core/coreDistributorAbi";
-import { getHeroData } from "@/app/utils";
+import { getHeroData, readCoreMintContract } from "@/app/utils";
 import { HeroDataTypes } from "@/types";
 import { BreadcrumSvg, ProfileSvg, SiteLogoSvg } from "@/svg";
 import React from "react";
 import { usePathname } from "next/navigation";
+import { Context } from "@/app/mintContextProvider";
 
 export const Header = () => {
   const { disconnect } = useDisconnect();
@@ -20,18 +19,23 @@ export const Header = () => {
   const chainId = useChainId();
   const HeroData: HeroDataTypes = getHeroData(chainId);
   const pathname = usePathname();
-
+  const { mintValue } = useContext(Context);
   const {
     data: balance,
     error,
     isLoading,
+    refetch,
   } = useReadContract({
     abi: coreDistributorAbi,
     functionName: "balanceOf",
-    address: "0x616A5BDb2Be3b01B73FD60FEad901BB040ee7dFA",
+    address: readCoreMintContract,
     chainId: chainId,
     args: [address!],
   });
+
+  useEffect(() => {
+    refetch();
+  }, [mintValue]);
 
   if (error) {
     console.error("Contract call error:", error);
@@ -108,7 +112,9 @@ export const Header = () => {
         height={"30px"}
         fill={"black"}
       />
-      <p className="text-white ml-2" onClick={() => disconnect()}>{formatAddress(address || "")}</p>
+      <p className="text-white ml-2" onClick={() => disconnect()}>
+        {formatAddress(address || "")}
+      </p>
     </div>
   );
 

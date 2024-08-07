@@ -1,5 +1,8 @@
-import { HeroDataTypes } from "@/types";
+import { CustomColors, HeroDataTypes } from "@/types";
 import { baseUrl } from "./enums";
+import config from "@/tailwind.config";
+
+const colors = config.theme?.colors as unknown as CustomColors;
 
 const defaultValues = {
   chainContractAddress: "0x",
@@ -14,7 +17,7 @@ const defaultValues = {
   mainSmallLogo: "/assets/core/mainLogo.svg",
   mainLargelogo: "/assets/core/mainLogo.svg",
   addClass: "bg-coreColor hover:bg-coreHoverColor",
-  profile: "#FF9211",
+  profile: colors.coreColor,
 };
 
 export const getHeroData = (chainId: number): HeroDataTypes => {
@@ -44,11 +47,11 @@ export const getHeroData = (chainId: number): HeroDataTypes => {
   switch (chainId) {
     case 1115:
       return {
-        chains: [
+        chain: [
           {
             ...baseData,
-            chainId: 1115,
-            chainName: "Core Testnet",
+            id: 1115,
+            name: "Core Testnet",
             nativeCurrency: { name: "Core", symbol: "tCORE", decimals: 18 },
           },
         ],
@@ -57,11 +60,11 @@ export const getHeroData = (chainId: number): HeroDataTypes => {
 
     case 2:
       return {
-        chains: [
+        chain: [
           {
             ...baseData,
-            chainId: 2,
-            chainName: "Multivers Testnet",
+            id: 2,
+            name: "Multivers Testnet",
             nativeCurrency: {
               name: "Multivers",
               symbol: "tMULTIVERS",
@@ -80,16 +83,16 @@ export const getHeroData = (chainId: number): HeroDataTypes => {
         mainLargelogo: "/assets/multivers/mainLogo.svg",
         eLogo: "/assets/eLogo.svg",
         addClass: "bg-multiversColor hover:bg-multiversHoverColor",
-        profile: "#5D41DF",
+        profile: colors.multiversColor,
       };
 
     case 3:
       return {
-        chains: [
+        chain: [
           {
             ...baseData,
-            chainId: 3,
-            chainName: "Pentagon Testnet",
+            id: 3,
+            name: "Pentagon Testnet",
             nativeCurrency: {
               name: "Pentagon",
               symbol: "tPENTAGON",
@@ -108,16 +111,16 @@ export const getHeroData = (chainId: number): HeroDataTypes => {
         mainLargelogo: "/assets/pentagon/mainLogo.svg",
         eLogo: "/assets/eLogo.svg",
         addClass: "bg-pentagonColor hover:bg-pentagonHoverColor",
-        profile: "#0BBCA3",
+        profile: colors.pentagonColor,
       };
 
     default:
       return {
-        chains: [
+        chain: [
           {
             ...baseData,
-            chainId: 1115,
-            chainName: "Core Testnet",
+            id: 1115,
+            name: "Core Testnet",
             nativeCurrency: { name: "Core", symbol: "tCORE", decimals: 18 },
           },
         ],

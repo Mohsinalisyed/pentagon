@@ -1,5 +1,5 @@
 export interface HeroDataTypes {
-  chains: Chain[];
+  chain: Chain[];
   chainContractAddress: string;
   bannerSmall: string;
   bannerLarge: string;
@@ -15,8 +15,8 @@ export interface HeroDataTypes {
 }
 
 export interface Chain {
-  chainId: number;
-  chainName: string;
+  id: number;
+  name: string;
   nativeCurrency: NativeCurrency;
   rpcUrls: string;
   blockExplorers: BlockExplorers;

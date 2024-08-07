@@ -7,7 +7,17 @@ import React from "react";
 
 export const metadata: Metadata = {
   title: "Home",
-  description: "BCSH",
+  description:
+    "By joining Blockchain Superheroes, you're helping to shape Superheroes' stories and unlock their potential.",
+  openGraph: {
+    images: [
+      {
+        url: `${process.env.NEXT_PUBLIC_BASE_URL}assets/meta/metaImg.png`,
+        width: 768,
+        height: 432,
+      },
+    ],
+  },
 };
 export default function RootLayout({
   children,

@@ -8,22 +8,22 @@ import React from "react";
 const AboutBSCH = () => {
   return (
     <>
-      <div className="bg-black text-white p-8 relative max-w-7xl mx-auto px-4 py-10">
+      <div className="bg-black text-white p-8 relative max-w-[83rem] mx-auto px-4 py-10">
         <Heading title="About us" />
-        <div className="absolute mt-[22%] ml-[42%] hidden xl:block">
+        <div className="absolute mt-[24%] ml-[38%] hidden xl:block">
           <AboutSvg />
         </div>
         <div className="flex flex-col lg:flex-row">
           <div className="flex flex-col px-6 lg:px-0">
-            <div className="text-center lg:text-left lg:pr-16 font-chakra">
-              <h2 className="text-2xl mb-4 uppercase text-left font-bold">
+            <div className="text-center lg:text-left lg:pr-8 font-chakra">
+              <h2 className="text-2xl mb-4 uppercase text-left font-bold xl:w-[605px] p-[2px]">
                 Welcome to a captivating universe where every blockchain
                 superhero NFT is more than just a digital collectible
               </h2>
-              <p className="text-md text-lightGrayColor mb-5 font-lexand lg:font-sans lg:text-base font-normal text-sm text-left">
+              <p className="text-md text-lightGrayColor mb-5 font-lexand lg:font-sans lg:text-base font-normal text-sm text-left xl:w-[564.08px]">
                 {`it's your ticket to an immersive adventure across various blockchain realms. Each hero is uniquely crafted and minted on its own native blockchain, reflecting the distinct spirit and innovative flair of each platform.`}
               </p>
-              <p className="text-md text-lightGrayColor pr-5 font-lexand lg:font-sans lg:text-base font-normal text-sm text-left">
+              <p className="text-md text-lightGrayColor pr-1 font-lexand lg:font-sans lg:text-base font-normal text-sm text-left xl:w-[564.08px]">
                 {`At BCSH, every NFT is a gateway to a story, where superheroes
               aren't just born—they're discovered and cherished. With our heroes
               officially trademarked in the United States Patent and Trademark
@@ -41,19 +41,19 @@ const AboutBSCH = () => {
           </div>
           <div className="flex flex-col mt-[0px] xl:mt-[-90px]">
             <div className="hidden lg:block">
-              <img src="/aboutright1.png" alt="aboutimage" />
+              <img src="/aboutright1.png" alt="aboutimage" /> 
             </div>
-            <div className="lg:pl-32 text-center lg:text-left px-6 lg:px-0 font-bold">
-              <h1 className="text-2xl mb-4 text-white uppercase font-chakra text-left">
+            <div className="lg:pl-24 text-center lg:text-left px-6 lg:px-0 font-bold">
+              <h1 className="text-2xl mb-4 text-white uppercase font-chakra text-left lg:w-[564.08px]">
                 {`But BCSH is about more than just collecting—it's about participating.`}
               </h1>
-              <p className="text-md text-lightGrayColor mb-3 font-lexand lg:font-sans lg:text-base font-normal text-sm text-left">
+              <p className="text-md text-lightGrayColor mb-3 font-lexand lg:font-sans lg:text-base font-normal text-sm text-left xl:w-[564.08px]">
                 {`We're building a community where every member contributes to the narrative, helping heroes evolve and take on new adventures. By joining BCSH, you're not just collecting NFTs; you're helping to shape their stories and unlock their potential.`}
               </p>
-              <p className="text-md text-lightGrayColor mb-3 font-lexand lg:font-sans lg:text-base font-normal text-sm text-left">
+              <p className="text-md text-lightGrayColor mb-3 font-lexand lg:font-sans lg:text-base font-normal text-sm text-left xl:w-[564.08px]">
                 {`Whether you're a fan of epic quests or enchanted by the lore of different blockchains, our heroes offer you a way to engage with blockchain technology in a fun and meaningful way. Every hero card is a piece of the action, a fragment of the saga that you help to unfold.`}
               </p>
-              <p className="text-md text-lightGrayColor font-lexand lg:font-sans lg:text-base font-normal text-sm text-left">
+              <p className="text-md text-lightGrayColor font-lexand lg:font-sans lg:text-base font-normal text-sm text-left xl:w-[564.08px]">
                 {`Step into our world, collect your heroes, and join us on a journey of discovery and engagement. Each superhero is waiting for their story to be told—with your help. Be part of a vibrant community that values creativity, involvement, and the thrill of the chase.`}
               </p>
             </div>
@@ -66,7 +66,7 @@ const AboutBSCH = () => {
             </div>
           </div>
         </div>
-        <p className="text-yellowLight text-left lg:pt-8 lg:px-2 text-[20px] lg:text-[25px] font-normal font-chakra leading-5 lg:leading-none pt-0 px-9">
+        <p className="text-yellowLight text-left lg:pt-8 lg:px-2 text-[20px] lg:text-[25px] font-normal font-chakra leading-5 lg:leading-none pt-0 px-9 xl:w-[1332px]">
           Get ready to explore, interact, and be part of something bigger.
           Welcome to the Blockchain Superheroes experience!
         </p>

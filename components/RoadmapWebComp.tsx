@@ -24,7 +24,7 @@ const RoadmapWebComp = () => {
         }}
       >
         <div className="flex justify-end">
-          <div className="rounded-4xl absolute left-[6px] mt-[20px] shadow-lg flex flex-col p-2 items-center border border-solid border-yellowLight w-[550px] h-[270px]">
+          <div className="rounded-4xl absolute left-[6px] mt-[20px] shadow-lg flex flex-col p-2 items-center border border-solid border-yellowLight border-opacity-50 w-[550px] h-[270px]">
             <CardOneSvg />
             <h1 className="text-2xl mb-3 text-white text-center font-chakra uppercase font-bold pt-[6px]">
               100% Art reveal
@@ -44,7 +44,7 @@ const RoadmapWebComp = () => {
           />
         </div>
         <div>
-          <div className="rounded-4xl absolute right-[4px] top-[385px] shadow-lg flex flex-col p-2 border border-solid border-yellowLight items-center w-[575px] h-[270px] py-[36px] px-[38px]">
+          <div className="rounded-4xl absolute right-[4px] top-[385px] shadow-lg flex flex-col p-2 border border-solid border-yellowLight border-opacity-50 items-center w-[575px] h-[270px] py-[36px] px-[38px]">
             <CardTwoSvg />
             <h1 className="text-2xl mb-3 text-white text-center font-chakra uppercase font-bold">
               Full Profile Hero
@@ -64,7 +64,7 @@ const RoadmapWebComp = () => {
           />
         </div>
         <div className="flex justify-end">
-          <div className="rounded-4xl absolute left-[4px] top-[800px] shadow-lg flex flex-col p-2 border border-solid border-yellowLight items-center w-[550px] h-[270px] py-[36px] px-[32px]">
+          <div className="rounded-4xl absolute left-[4px] top-[800px] shadow-lg flex flex-col p-2 border border-solid border-yellowLight border-opacity-50 items-center w-[550px] h-[270px] py-[36px] px-[32px]">
             <CardThreeSvg />
             <h1 className="text-2xl mb-3 text-white text-center font-chakra uppercase font-bold">
               3D Hero Avatar
@@ -84,7 +84,7 @@ const RoadmapWebComp = () => {
           />
         </div>
         <div>
-          <div className="rounded-4xl absolute right-[4px] top-[1230px] shadow-lg flex flex-col p-2 border border-solid border-yellowLight items-center w-[575px] h-[270px] py-[36px] px-[38px]">
+          <div className="rounded-4xl absolute right-[4px] top-[1230px] shadow-lg flex flex-col p-2 border border-solid border-yellowLight border-opacity-50 items-center w-[575px] h-[270px] py-[36px] px-[38px]">
             <CardFourSvg />
             <h1 className="text-2xl mb-3 text-white text-center font-chakra uppercase font-bold">
               Metaverse Zone
@@ -104,7 +104,7 @@ const RoadmapWebComp = () => {
           />
         </div>
         <div className="flex justify-end">
-          <div className="rounded-4xl absolute left-[4px] top-[1640px] shadow-lg flex flex-col p-2 border border-solid border-yellowLight items-center w-[550px] h-[270px] py-[26px] px-[32px]">
+          <div className="rounded-4xl absolute left-[4px] top-[1640px] shadow-lg flex flex-col p-2 border border-solid border-yellowLight border-opacity-50 items-center w-[550px] h-[270px] py-[26px] px-[32px]">
             <CardFiveSvg />
             <h1 className="text-2xl mb-3 text-white text-center font-chakra uppercase font-bold">
               Comic book reveal

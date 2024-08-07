@@ -3,7 +3,7 @@ import React from "react";
 
 export const AboutSvg: React.FC<IconSvgProps> = () => {
   return (
-    <div className="w-[273px] bg-black flex justify-center items-center rounded-[135px] border-[20px] border-black">
+    <div className="w-[273px] bg-black flex justify-center items-center rounded-[135px] border-[20px] border-aboutColor">
       <svg
         width="230"
         height="230"

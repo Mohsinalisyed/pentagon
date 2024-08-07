@@ -25,4 +25,12 @@ export interface RoadmapCompProps {
   heading2: string;
 }
 
+export interface CustomColors {
+  coreColor: string;
+  coreHoverColor: string;
+  pentagonColor: string;
+  pentagonHoverColor: string;
+  multiversColor: string;
+}
+
 export * from "./heroTypes";

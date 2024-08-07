@@ -2,7 +2,7 @@
 
 "use client";
 
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import {
   useWaitForTransactionReceipt,
   useWriteContract,
@@ -14,9 +14,15 @@ import { useQueryClient } from "@tanstack/react-query";
 import { coreMintAbi } from "@/abi/core/coreMintAbi";
 import { ArrowSvg } from "@/svg";
 import { HeroDataTypes, MintButtonProps } from "@/types";
-import { errorToast, getHeroData, successToast } from "@/app/utils";
+import {
+  errorToast,
+  getHeroData,
+  successToast,
+  writeCoreMintContract,
+} from "@/app/utils";
 import { useViewport } from "@/hooks/useViewPort";
 import { LoadingSpinner } from "./LoadingSpinner";
+import { Context } from "@/app/mintContextProvider";
 
 const MintButtonLarge: React.FC<MintButtonProps> = ({
   handleCoreMint,
@@ -110,6 +116,7 @@ const MintButton: React.FC<{ isLarge?: boolean; chainId: number }> = ({
   const { connectWallet, isConnected, address } = useWalletConnect();
   const queryClient = useQueryClient();
   const { width } = useViewport();
+  const { mintValue, setMintValue } = useContext(Context);
   const { data: balance } = useBalance({
     address: address,
     chainId: chainId,
@@ -126,7 +133,6 @@ const MintButton: React.FC<{ isLarge?: boolean; chainId: number }> = ({
     mutation: {
       onSuccess: () => {
         queryClient.invalidateQueries();
-        successToast("Transaction Successful");
       },
       onError: (error) => {
         errorToast(
@@ -140,8 +146,8 @@ const MintButton: React.FC<{ isLarge?: boolean; chainId: number }> = ({
 
   const handleCoreMint = async () => {
     if (isConnected) {
-      writeContract({
-        address: "0x6b9502c41BcF87D259373f0478947ad75F963fd4",
+      await writeContract({
+        address: writeCoreMintContract,
         abi: coreMintAbi,
         chainId: chainId,
         functionName: "mint",
@@ -151,8 +157,16 @@ const MintButton: React.FC<{ isLarge?: boolean; chainId: number }> = ({
       connectWallet();
     }
   };
+  const { isLoading, isSuccess } = useWaitForTransactionReceipt({ hash });
 
-  const { isLoading } = useWaitForTransactionReceipt({ hash });
+  useEffect(() => {
+    if (!isLoading || !isPending) {
+      setMintValue(!mintValue);
+    }
+    if (isSuccess) {
+      successToast("Transaction Successful");
+    }
+  }, [isLoading, isPending]);
 
   return isLarge ? (
     <MintButtonLarge
