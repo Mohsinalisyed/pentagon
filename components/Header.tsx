@@ -49,10 +49,10 @@ export const Header = () => {
 
   const navLinks = [
     { name: "ABOUT BSCH", href: "/aboutbsch", disabled: false },
-    { name: "HODLER PERKS", href: "/hodlerperks", disabled: true },
+    { name: "HODLER PERKS", href: "/hodlerperks", disabled: false },
     { name: "ROADMAP", href: "/roadmap", disabled: false },
     { name: "AIRDROP", href: "/airdrop", disabled: true },
-    { name: "SOCIALS", href: "/socials", disabled: true },
+    { name: "SOCIALS", href: "/socials", disabled: false },
   ];
 
   const renderNavLinks = (
